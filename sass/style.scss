@@ -138,11 +138,10 @@ section>h6 {
   height: $pixel-25;
 }
 
-
 .console-content {
-  padding: $pixel-20;
   background-color: $color-console;
   font-family: $font-console;
+  padding: $pixel-20;
 	height: 550px;
 
   a {

@@ -139,9 +139,9 @@ section > h6 {
 }
 
 .console-content {
-  padding: 20px;
   background-color: rgba(49, 39, 77, 0.794);
   font-family: "Courier New", Courier, monospace;
+  padding: 20px;
   height: 550px;
 }
 
