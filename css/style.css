@@ -58,14 +58,14 @@
 }
 
 body {
+  margin: 0;
   position: relative;
   width: 100%;
-  margin: 0;
 }
 
 body > div {
-  position: relative;
   margin: auto;
+  position: relative;
 }
 
 section > h6 {
