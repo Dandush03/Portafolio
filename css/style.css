@@ -104,7 +104,7 @@ section > h6 {
 }
 
 .hero-title > div > span::before {
-  content: ">\A0";
+  content: '>\A0';
 }
 
 .hero-title > div > span > span {
@@ -119,23 +119,23 @@ section > h6 {
 }
 
 .hero-description > :nth-child(even) {
-  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .hero-description a {
-  font-weight: bold;
   color: rgba(17, 0, 255, 0.692);
+  font-weight: bold;
   text-decoration: none;
 }
 
 .console-header {
   background-color: rgba(163, 163, 163, 0.5);
-  height: 25px;
   border-color: rgba(199, 199, 199, 0.5);
   border-style: solid;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  height: 25px;
 }
 
 .console-content {
@@ -167,7 +167,7 @@ section > h6 {
 }
 
 .console-content .console-input::before {
-  content: ">\A0";
+  content: '>\A0';
 }
 
 .console-content .console-input .typing {

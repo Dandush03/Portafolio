@@ -102,7 +102,7 @@ section>h6 {
       white-space: nowrap;
 
       &::before {
-        content: ">\A0";
+        content: '>\A0';
       }
 
       &>span {
@@ -117,25 +117,25 @@ section>h6 {
   font-family: $font-normal;
   line-height: $pixel-30;
 
-  &>:nth-child(even){
-    margin-top: $pixel-20;
+  &>:nth-child(even) {
     margin-bottom: $pixel-20;
+    margin-top: $pixel-20;
   }
 
   a {
-    font-weight: bold;
     color: $color-light-blue;
+    font-weight: bold;
     text-decoration: none;
   }
 }
 
 .console-header {
   background-color: $color-console-header;
-  height: $pixel-25;
   border-color: $color-console-header-border;
   border-style: solid;
   border-top-left-radius: $pixel-5;
   border-top-right-radius: $pixel-5;
+  height: $pixel-25;
 }
 
 
@@ -164,7 +164,7 @@ section>h6 {
     margin-bottom: $pixel-20;
 
     &::before {
-      content: ">\A0";
+      content: '>\A0';
     }
 
     .typing{
