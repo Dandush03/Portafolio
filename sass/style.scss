@@ -77,9 +77,9 @@ section>h6 {
 }
 
 .main-container {
+  margin: auto;
   max-width: $max-width;
   padding: $pixel-15;
-  margin: auto;
   width: 100%;
 }
 
@@ -91,7 +91,6 @@ section>h6 {
   color: $color-light-blue;
   overflow: hidden;
   white-space: nowrap;
-  margin: auto;
 
   &>div {
     width: fit-content;

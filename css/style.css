@@ -73,9 +73,9 @@ section > h6 {
 }
 
 .main-container {
+  margin: auto;
   max-width: 1280px;
   padding: 15px;
-  margin: auto;
   width: 100%;
 }
 
@@ -87,7 +87,6 @@ section > h6 {
   color: rgba(17, 0, 255, 0.692);
   overflow: hidden;
   white-space: nowrap;
-  margin: auto;
 }
 
 .hero-title > div {
