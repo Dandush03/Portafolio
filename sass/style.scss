@@ -84,12 +84,12 @@ section>h6 {
 }
 
 .hero-title {
-  overflow: hidden;
-  color: $color-light-blue;
-  width: 100%;
-  font-family: $font-console;
-  font-size: $font-s-1-75;
   margin-bottom: $pixel-10;
+  font-family: $font-console;
+  color: $color-light-blue;
+  overflow: hidden;
+  font-size: $font-s-1-75;
+  width: 100%;
   white-space: nowrap;
 
   &>div {

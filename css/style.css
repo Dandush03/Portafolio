@@ -80,12 +80,12 @@ section > h6 {
 }
 
 .hero-title {
-  overflow: hidden;
-  color: rgba(17, 0, 255, 0.692);
-  width: 100%;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 175%;
   margin-bottom: 10px;
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(17, 0, 255, 0.692);
+  overflow: hidden;
+  font-size: 175%;
+  width: 100%;
   white-space: nowrap;
 }
 
