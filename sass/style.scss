@@ -84,22 +84,22 @@ section>h6 {
 }
 
 .hero-title {
+  overflow: hidden;
+  color: $color-light-blue;
   width: 100%;
   font-family: $font-console;
   font-size: $font-s-1-75;
   margin-bottom: $pixel-10;
-  color: $color-light-blue;
-  overflow: hidden;
   white-space: nowrap;
 
   &>div {
     width: fit-content;
 
     &>span {
+      animation: typing 2.5s steps(17, end);
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
-      animation: typing 2.5s steps(17, end);
 
       &::before {
         content: ">\A0";
