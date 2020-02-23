@@ -140,17 +140,17 @@ section>h6 {
 
 
 .console-content {
-  height: 550px;
-  background-color: $color-console;
   padding: $pixel-20;
+  background-color: $color-console;
   font-family: $font-console;
+	height: 550px;
 
   a {
-    text-decoration: none;
     color: $color-sky-blue;
+    text-decoration: none;
   }
 
-  &>:nth-child(even){
+  &>:nth-child(even) {
     margin-bottom: $pixel-30;
   }
 
@@ -159,9 +159,9 @@ section>h6 {
   }
 
   .console-input {
-    width: fit-content;
     color: $color-white;
     margin-bottom: $pixel-20;
+    width: fit-content;
 
     &::before {
       content: '>\A0';
@@ -173,8 +173,8 @@ section>h6 {
   }
 
   .console-output {
-    width: fit-content;
     color: $color-yellow;
+    width: fit-content;
   }
 }
 
@@ -198,8 +198,8 @@ section>h6 {
 
   .console-content {
     font-size: $font-s-1-75;
-    height: 800px;
     padding: $pixel-50;
+    height: 800px;
   }
 }
 

@@ -139,15 +139,15 @@ section > h6 {
 }
 
 .console-content {
-  height: 550px;
-  background-color: rgba(49, 39, 77, 0.794);
   padding: 20px;
+  background-color: rgba(49, 39, 77, 0.794);
   font-family: "Courier New", Courier, monospace;
+  height: 550px;
 }
 
 .console-content a {
-  text-decoration: none;
   color: rgba(103, 199, 255, 0.886);
+  text-decoration: none;
 }
 
 .console-content > :nth-child(even) {
@@ -159,11 +159,11 @@ section > h6 {
 }
 
 .console-content .console-input {
+  color: rgba(255, 255, 255, 0.886);
+  margin-bottom: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: rgba(255, 255, 255, 0.886);
-  margin-bottom: 20px;
 }
 
 .console-content .console-input::before {
@@ -176,10 +176,10 @@ section > h6 {
 }
 
 .console-content .console-output {
+  color: rgba(208, 255, 0, 0.886);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  color: rgba(208, 255, 0, 0.886);
 }
 
 [class*="col-"] {
@@ -200,8 +200,8 @@ section > h6 {
   }
   .console-content {
     font-size: 175%;
-    height: 800px;
     padding: 50px;
+    height: 800px;
   }
 }
 
