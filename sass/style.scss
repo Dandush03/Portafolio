@@ -141,8 +141,8 @@ section>h6 {
 .console-content {
   background-color: $color-console;
   font-family: $font-console;
-  padding: $pixel-20;
 	height: 550px;
+  padding: $pixel-20;
 
   a {
     color: $color-sky-blue;
@@ -166,7 +166,7 @@ section>h6 {
       content: '>\A0';
     }
 
-    .typing{
+    .typing {
       animation: insert-mode-console 1s steps(2) infinite;
     }
   }
@@ -177,7 +177,7 @@ section>h6 {
   }
 }
 
-[class*="col-"] {
+[class*='col-'] {
   float: left;
 }
 
@@ -197,8 +197,8 @@ section>h6 {
 
   .console-content {
     font-size: $font-s-1-75;
-    padding: $pixel-50;
     height: 800px;
+    padding: $pixel-50;
   }
 }
 

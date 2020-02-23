@@ -141,8 +141,8 @@ section > h6 {
 .console-content {
   background-color: rgba(49, 39, 77, 0.794);
   font-family: "Courier New", Courier, monospace;
-  padding: 20px;
   height: 550px;
+  padding: 20px;
 }
 
 .console-content a {
@@ -182,7 +182,7 @@ section > h6 {
   width: fit-content;
 }
 
-[class*="col-"] {
+[class*='col-'] {
   float: left;
 }
 
@@ -200,8 +200,8 @@ section > h6 {
   }
   .console-content {
     font-size: 175%;
-    padding: 50px;
     height: 800px;
+    padding: 50px;
   }
 }
 
