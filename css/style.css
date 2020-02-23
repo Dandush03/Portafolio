@@ -85,8 +85,8 @@ section > h6 {
   font-size: 175%;
   margin-bottom: 10px;
   overflow: hidden;
-  width: 100%;
   white-space: nowrap;
+  width: 100%;
 }
 
 .hero-title > div {
