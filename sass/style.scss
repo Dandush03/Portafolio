@@ -1,0 +1,223 @@
+$max-width: 1280px;
+$pad-width: 1024px;
+$phone-width: 600px;
+$width-100: 100%;
+$pixel-5: 5px;
+$pixel-15: 15px;
+$pixel-10: 10px;
+$pixel-20: 20px;
+$pixel-25: 25px;
+$pixel-30: 30px;
+$pixel-40: 40px;
+$pixel-50: 50px;
+$font-s-1-75: 175%;
+$font-s-2: 200%;
+$font-s-3: 300%;
+$font-s-4: 400%;
+$font-console: 'Courier New',
+Courier,
+monospace;
+$font-normal: 'Open Sans';
+$color-sky-blue: rgba(103, 199, 255, 0.886);
+$color-light-blue: rgba(17, 0, 255, 0.692);
+$color-blue: rgba(37, 33, 98, 0.9);
+$color-console-header: rgba(163, 163, 163, 0.5);
+$color-console-header-border: rgba(199, 199, 199, 0.5);
+$color-console: rgba(49, 39, 77, 0.794);
+$color-yellow: rgba(208, 255, 0, 0.886);
+$color-white: rgba(255, 255, 255, 0.886);
+
+@keyframes insert-mode {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: $color-light-blue;
+  }
+}
+
+@keyframes insert-mode-console {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: $color-white;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  margin: 0;
+
+  &>div {
+    position: relative;
+    margin: auto;
+  }
+}
+
+section>h6 {
+	display: none;
+}
+
+.main-container {
+  max-width: $max-width;
+  padding: $pixel-15;
+  margin: auto;
+  width: 100%;
+}
+
+.hero-title {
+  width: 100%;
+  font-family: $font-console;
+  font-size: $font-s-1-75;
+  margin-bottom: $pixel-10;
+  color: $color-light-blue;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto;
+
+  &>div {
+    width: fit-content;
+
+    &>span {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2.5s steps(17, end);
+
+      &::before {
+        content: ">\A0";
+      }
+
+      &>span {
+        animation: insert-mode 1s steps(2) infinite;
+      }
+    }
+  }
+}
+
+.hero-description {
+  color: $color-blue;
+  font-family: $font-normal;
+  line-height: $pixel-30;
+
+  &>:nth-child(even){
+    margin-top: $pixel-20;
+    margin-bottom: $pixel-20;
+  }
+
+  a {
+    font-weight: bold;
+    color: $color-light-blue;
+    text-decoration: none;
+  }
+}
+
+.console-header {
+  background-color: $color-console-header;
+  height: $pixel-25;
+  border-color: $color-console-header-border;
+  border-style: solid;
+  border-top-left-radius: $pixel-5;
+  border-top-right-radius: $pixel-5;
+}
+
+
+.console-content {
+  height: 550px;
+  background-color: $color-console;
+  padding: $pixel-20;
+  font-family: $font-console;
+
+  a {
+    text-decoration: none;
+    color: $color-sky-blue;
+  }
+
+  &>:nth-child(even){
+    margin-bottom: $pixel-30;
+  }
+
+  &>div {
+    margin-bottom: $pixel-10;
+  }
+
+  .console-input {
+    width: fit-content;
+    color: $color-white;
+    margin-bottom: $pixel-20;
+
+    &::before {
+      content: ">\A0";
+    }
+
+    .typing{
+      animation: insert-mode-console 1s steps(2) infinite;
+    }
+  }
+
+  .console-output {
+    width: fit-content;
+    color: $color-yellow;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.col-12 {
+  width: $width-100/1;
+}
+
+@media only screen and (min-width: $phone-width) {
+  .hero-title {
+    font-size: $font-s-3;
+  }
+
+  .hero-description {
+    font-size: $font-s-3/2;
+    line-height: $pixel-40;
+  }
+
+  .console-content {
+    font-size: $font-s-1-75;
+    height: 800px;
+    padding: $pixel-50;
+  }
+}
+
+@media only screen and (min-width: $pad-width) {
+  .hero-title {
+    font-size: $font-s-4;
+  }
+
+  .console-content {
+    height: 700px;
+  }
+
+  .hero-description {
+    line-height: $pixel-40;
+  }
+
+  .col-desk-12 {
+    width: $width-100/1;
+  }
+}
