@@ -1,0 +1,252 @@
+@-webkit-keyframes insert-mode {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(17, 0, 255, 0.692);
+  }
+}
+
+@keyframes insert-mode {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(17, 0, 255, 0.692);
+  }
+}
+
+@-webkit-keyframes insert-mode-console {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.886);
+  }
+}
+
+@keyframes insert-mode-console {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.886);
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+body > div {
+  margin: auto;
+  position: relative;
+}
+
+section > h6 {
+  display: none;
+}
+
+.main-container {
+  margin: auto;
+  max-width: 1280px;
+  padding: 15px;
+  width: 100%;
+}
+
+.hero-title {
+  color: rgba(17, 0, 255, 0.692);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 175%;
+  margin-bottom: 10px;
+  margin-top: 15vh;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.hero-title > div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.hero-title > div > span {
+  -webkit-animation: typing 2.5s steps(17, end);
+          animation: typing 2.5s steps(17, end);
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.hero-title > div > span::before {
+  content: '>\A0';
+}
+
+.hero-title > div > span > span {
+  -webkit-animation: insert-mode 1s steps(2) infinite;
+          animation: insert-mode 1s steps(2) infinite;
+}
+
+.hero-description {
+  color: rgba(37, 33, 98, 0.9);
+  font-family: "Open Sans";
+  line-height: 30px;
+}
+
+.hero-description > :nth-child(even) {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.hero-description a {
+  color: rgba(17, 0, 255, 0.692);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.console-header {
+  background-color: rgba(163, 163, 163, 0.5);
+  border-color: rgba(199, 199, 199, 0.5);
+  border-style: solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 25px;
+}
+
+.console-content {
+  background-color: rgba(49, 39, 77, 0.794);
+  font-family: "Courier New", Courier, monospace;
+  height: 550px;
+  padding: 20px;
+}
+
+.console-content a {
+  color: rgba(103, 199, 255, 0.886);
+  text-decoration: none;
+}
+
+.console-content > :nth-child(even) {
+  margin-bottom: 30px;
+}
+
+.console-content > div {
+  margin-bottom: 10px;
+}
+
+.console-content .console-input {
+  color: rgba(255, 255, 255, 0.886);
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.console-content .console-input::before {
+  content: '>\A0';
+}
+
+.console-content .console-input .typing {
+  -webkit-animation: insert-mode-console 1s steps(2) infinite;
+          animation: insert-mode-console 1s steps(2) infinite;
+}
+
+.console-content .console-output {
+  color: rgba(208, 255, 0, 0.886);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.resume {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+.resume > embed {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-title {
+    font-size: 400%;
+  }
+  .hero-description {
+    font-size: 300%;
+    line-height: 40px;
+  }
+  .console-content {
+    font-size: 300%;
+    height: 1300px;
+    padding: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-title {
+    font-size: 400%;
+  }
+  .console-content {
+    height: 1300px;
+  }
+  .hero-description {
+    font-size: 300%;
+    line-height: 40px;
+  }
+  .col-desk-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero-title {
+    font-size: 400%;
+  }
+  .console-content {
+    font-size: 200%;
+    height: 800px;
+  }
+  .hero-description {
+    font-size: 200%;
+    line-height: 40px;
+  }
+  .col-desk-12 {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
