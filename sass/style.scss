@@ -10,6 +10,14 @@ $pixel-25: 25px;
 $pixel-30: 30px;
 $pixel-40: 40px;
 $pixel-50: 50px;
+$vh-5: 5vh;
+$vh-15: 15vh;
+$vh-10: 10vh;
+$vh-20: 20vh;
+$vh-25: 25vh;
+$vh-30: 30vh;
+$vh-40: 40vh;
+$vh-50: 50vh;
 $font-s-1-75: 175%;
 $font-s-2: 200%;
 $font-s-3: 300%;
@@ -88,6 +96,7 @@ section>h6 {
   font-family: $font-console;
   font-size: $font-s-1-75;
   margin-bottom: $pixel-10;
+  margin-top: $vh-15;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -185,19 +194,30 @@ section>h6 {
   width: $width-100/1;
 }
 
+.resume {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  &>embed {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media only screen and (min-width: $phone-width) {
   .hero-title {
-    font-size: $font-s-3;
+    font-size: $font-s-4;
   }
 
   .hero-description {
-    font-size: $font-s-3/2;
+    font-size: $font-s-3;
     line-height: $pixel-40;
   }
 
   .console-content {
-    font-size: $font-s-1-75;
-    height: 800px;
+    font-size: $font-s-3;
+    height: 1300px;
     padding: $pixel-50;
   }
 }
@@ -208,11 +228,32 @@ section>h6 {
   }
 
   .console-content {
-    height: 700px;
+    height: 1300px;
   }
 
   .hero-description {
     line-height: $pixel-40;
+    font-size: $font-s-3;
+  }
+
+  .col-desk-12 {
+    width: $width-100/1;
+  }
+}
+
+@media only screen and (min-width: $pad-width + 1) {
+  .hero-title {
+    font-size: $font-s-4;
+  }
+
+  .console-content {
+    height: 800px;
+    font-size: $font-s-2;
+  }
+
+  .hero-description {
+    line-height: $pixel-40;
+    font-size: $font-s-2;
   }
 
   .col-desk-12 {

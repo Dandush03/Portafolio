@@ -84,6 +84,7 @@ section > h6 {
   font-family: "Courier New", Courier, monospace;
   font-size: 175%;
   margin-bottom: 10px;
+  margin-top: 15vh;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -190,17 +191,28 @@ section > h6 {
   width: 100%;
 }
 
+.resume {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.resume > embed {
+  width: 100%;
+  height: 100%;
+}
+
 @media only screen and (min-width: 600px) {
   .hero-title {
-    font-size: 300%;
+    font-size: 400%;
   }
   .hero-description {
-    font-size: 150%;
+    font-size: 300%;
     line-height: 40px;
   }
   .console-content {
-    font-size: 175%;
-    height: 800px;
+    font-size: 300%;
+    height: 1300px;
     padding: 50px;
   }
 }
@@ -210,10 +222,28 @@ section > h6 {
     font-size: 400%;
   }
   .console-content {
-    height: 700px;
+    height: 1300px;
   }
   .hero-description {
     line-height: 40px;
+    font-size: 300%;
+  }
+  .col-desk-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .hero-title {
+    font-size: 400%;
+  }
+  .console-content {
+    height: 800px;
+    font-size: 200%;
+  }
+  .hero-description {
+    line-height: 40px;
+    font-size: 200%;
   }
   .col-desk-12 {
     width: 100%;
