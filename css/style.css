@@ -153,8 +153,8 @@ section > h6 {
   -webkit-mask-size: cover;
           mask-size: cover;
   position: absolute;
-  top: 2.5px;
   right: 10px;
+  top: 2.5px;
   width: 15px;
 }
 

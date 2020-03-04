@@ -94,7 +94,7 @@ rules:
       allow-element-with-id: false
   no-trailing-zero: 1
   no-transition-all: 0
-  no-url-protocols: 1
+  no-url-protocols: 0
   no-vendor-prefixes:
     - 1
     - additional-identifiers: []
