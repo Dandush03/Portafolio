@@ -143,10 +143,8 @@ section > h6 {
 .console-header > div {
   background-color: #8d8d8d;
   display: block;
-  position: absolute;
   height: 15px;
-  top: 2.5px;
-  right: 10px;
+  position: absolute;
   -webkit-mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
           mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
   -webkit-mask-repeat: no-repeat;
@@ -156,6 +154,8 @@ section > h6 {
   -webkit-mask-size: cover;
           mask-size: cover;
   width: 15px;
+  top: 2.5px;
+  right: 10px;
 }
 
 .console-content {
