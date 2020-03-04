@@ -145,6 +145,21 @@ section>h6 {
   border-top-left-radius: $pixel-5;
   border-top-right-radius: $pixel-5;
   height: $pixel-25;
+  position: relative;
+
+  &>div {
+    background-color: rgb(141, 141, 141);
+    position: absolute;
+    top: $pixel-5/2;
+    right: $pixel-10;
+    display: block;
+    width: $pixel-15;
+    height: $pixel-15;
+    mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+  }
 }
 
 .console-content {

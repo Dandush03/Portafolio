@@ -137,6 +137,25 @@ section > h6 {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: 25px;
+  position: relative;
+}
+
+.console-header > div {
+  background-color: #8d8d8d;
+  position: absolute;
+  top: 2.5px;
+  right: 10px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  -webkit-mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+          mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: cover;
+          mask-size: cover;
 }
 
 .console-content {
