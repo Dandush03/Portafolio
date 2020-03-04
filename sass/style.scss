@@ -154,12 +154,12 @@ section>h6 {
     height: $pixel-15;
     mask-image: url('https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg');
     mask-position: center;
-    mask-size: cover;
     mask-repeat: no-repeat;
+    mask-size: cover;
     position: absolute;
-    width: $pixel-15;
     top: $pixel-5/2;
     right: $pixel-10;
+    width: $pixel-15;
   }
 }
 
