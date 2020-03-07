@@ -294,8 +294,8 @@ section > h6 {
   }
   .console-header > div {
     height: 15px;
-    -webkit-mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
-            mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+    -webkit-mask-image: url(../resources/img/icon_x.svg);
+            mask-image: url(../resources/img/icon_x.svg);
     -webkit-mask-position: center;
             mask-position: center;
     -webkit-mask-repeat: no-repeat;
