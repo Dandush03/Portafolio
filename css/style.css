@@ -35,19 +35,25 @@
 }
 
 @-webkit-keyframes typing {
-  from {
+  0% {
     width: 0;
   }
-  to {
+  60% {
+    width: 0;
+  }
+  100% {
     width: 100%;
   }
 }
 
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
-  to {
+  60% {
+    width: 0;
+  }
+  100% {
     width: 100%;
   }
 }
@@ -61,6 +67,7 @@ body {
   margin: 0;
   position: relative;
   width: 100%;
+  font-family: "Spartan", sans-serif;
 }
 
 body > div {
@@ -91,37 +98,42 @@ section > h6 {
 }
 
 .hero-title > div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.hero-title > div > span {
-  -webkit-animation: typing 2.5s steps(17, end);
-          animation: typing 2.5s steps(17, end);
+.hero-title > div::before {
+  content: '>\A0';
+}
+
+.hero-title > div > span:first-child {
+  -webkit-animation: typing 4.5s steps(17, end);
+          animation: typing 4.5s steps(17, end);
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.hero-title > div > span::before {
-  content: '>\A0';
-}
-
-.hero-title > div > span > span {
+.hero-title > div > :nth-child(even) {
   -webkit-animation: insert-mode 1s steps(2) infinite;
           animation: insert-mode 1s steps(2) infinite;
 }
 
 .hero-description {
   color: rgba(37, 33, 98, 0.9);
-  font-family: "Open Sans";
-  line-height: 30px;
+  font-family: "Spartan", sans-serif;
+  padding-top: 25px;
 }
 
 .hero-description > :nth-child(even) {
   margin-bottom: 20px;
   margin-top: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .hero-description a {
@@ -134,16 +146,16 @@ section > h6 {
   background-color: rgba(163, 163, 163, 0.5);
   border-color: rgba(199, 199, 199, 0.5);
   border-style: solid;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  height: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 50px;
   position: relative;
 }
 
 .console-header > div {
   background-color: #8d8d8d;
   display: block;
-  height: 15px;
+  height: 25px;
   -webkit-mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
           mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
   -webkit-mask-position: center;
@@ -153,9 +165,9 @@ section > h6 {
   -webkit-mask-size: cover;
           mask-size: cover;
   position: absolute;
-  right: 10px;
-  top: 2.5px;
-  width: 15px;
+  right: 20px;
+  top: 12.5px;
+  width: 25px;
 }
 
 .console-content {
@@ -221,13 +233,18 @@ section > h6 {
   width: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+  body main {
+    padding: 25px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .hero-title {
     font-size: 400%;
   }
   .hero-description {
     font-size: 300%;
-    line-height: 40px;
   }
   .console-content {
     font-size: 300%;
@@ -245,7 +262,6 @@ section > h6 {
   }
   .hero-description {
     font-size: 300%;
-    line-height: 40px;
   }
   .col-desk-12 {
     width: 100%;
@@ -262,10 +278,29 @@ section > h6 {
   }
   .hero-description {
     font-size: 200%;
-    line-height: 40px;
   }
   .col-desk-12 {
     width: 100%;
+  }
+  .console-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 25px;
+  }
+  .console-header > div {
+    height: 15px;
+    -webkit-mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+            mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+    -webkit-mask-position: center;
+            mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 2.5px;
+    width: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
