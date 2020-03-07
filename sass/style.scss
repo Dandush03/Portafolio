@@ -32,9 +32,9 @@ sans-serif;
 $color-sky-blue: rgba(103, 199, 255, .886);
 $color-light-blue: rgba(17, 0, 255, .692);
 $color-blue: rgba(37, 33, 98, .9);
-$box-shadow-1: 0 50px 100px rgba(50, 50, 93, 0.05),
-0 25px 15px rgba(50, 50, 93, 0.1),
-0 20px 15px rgba(0, 0, 0, 0.1);
+$box-shadow-1: 0 50px 100px rgba(50, 50, 93, .05),
+0 25px 15px rgba(50, 50, 93, .1),
+0 20px 15px rgba(0, 0, 0, .1);
 $color-console-header: rgba(163, 163, 163, .5);
 $color-console-icons: rgb(141, 141, 141);
 $color-console-header-border: rgba(199, 199, 199, .5);
@@ -170,7 +170,7 @@ section>h6 {
     background-color: $color-console-icons;
     display: block;
     height: $pixel-25;
-    mask-image: url('https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg');
+    mask-image: url('../resources/img/icon_x.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
@@ -306,11 +306,6 @@ section>h6 {
 
     &>div {
       height: $pixel-15;
-      mask-image: url(../resources/img/icon_x.svg);
-      mask-position: center;
-      mask-repeat: no-repeat;
-      mask-size: cover;
-      position: absolute;
       right: $pixel-10;
       top: $pixel-5/2;
       width: $pixel-15;

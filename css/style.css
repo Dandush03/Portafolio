@@ -161,8 +161,8 @@ section > h6 {
   background-color: #8d8d8d;
   display: block;
   height: 25px;
-  -webkit-mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
-          mask-image: url("https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg");
+  -webkit-mask-image: url("../resources/img/icon_x.svg");
+          mask-image: url("../resources/img/icon_x.svg");
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -294,15 +294,6 @@ section > h6 {
   }
   .console-header > div {
     height: 15px;
-    -webkit-mask-image: url(../resources/img/icon_x.svg);
-            mask-image: url(../resources/img/icon_x.svg);
-    -webkit-mask-position: center;
-            mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-            mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-            mask-size: cover;
-    position: absolute;
     right: 10px;
     top: 2.5px;
     width: 15px;
