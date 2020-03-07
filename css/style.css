@@ -89,7 +89,7 @@ section > h6 {
 .hero-title {
   color: rgba(17, 0, 255, 0.692);
   font-family: "Courier New", Courier, monospace;
-  font-size: 175%;
+  font-size: 1.75em;
   margin-bottom: 10px;
   margin-top: 15vh;
   overflow: hidden;
@@ -241,13 +241,13 @@ section > h6 {
 
 @media only screen and (min-width: 600px) {
   .hero-title {
-    font-size: 400%;
+    font-size: 5em;
   }
   .hero-description {
-    font-size: 300%;
+    font-size: 3em;
   }
   .console-content {
-    font-size: 300%;
+    font-size: 3em;
     height: 1300px;
     padding: 50px;
   }
@@ -255,13 +255,13 @@ section > h6 {
 
 @media only screen and (min-width: 1024px) {
   .hero-title {
-    font-size: 400%;
+    font-size: 5em;
   }
   .console-content {
     height: 1300px;
   }
   .hero-description {
-    font-size: 300%;
+    font-size: 3em;
   }
   .col-desk-12 {
     width: 100%;
@@ -270,14 +270,14 @@ section > h6 {
 
 @media only screen and (min-width: 1025px) {
   .hero-title {
-    font-size: 400%;
+    font-size: 5em;
   }
   .console-content {
-    font-size: 200%;
+    font-size: 2em;
     height: 800px;
   }
   .hero-description {
-    font-size: 200%;
+    font-size: 2em;
   }
   .col-desk-12 {
     width: 100%;
