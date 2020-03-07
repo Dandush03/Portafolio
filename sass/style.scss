@@ -25,7 +25,8 @@ $font-s-4: 400%;
 $font-console: 'Courier New',
 Courier,
 monospace;
-$font-normal: 'Open Sans';
+$font-normal: 'Spartan',
+sans-serif;
 $color-sky-blue: rgba(103, 199, 255, .886);
 $color-light-blue: rgba(17, 0, 255, .692);
 $color-blue: rgba(37, 33, 98, .9);
@@ -57,11 +58,15 @@ $color-white: rgba(255, 255, 255, .886);
 }
 
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
 
-  to {
+  60% {
+    width: 0;
+  }
+
+  100% {
     width: 100%;
   }
 }
@@ -74,6 +79,7 @@ body {
   margin: 0;
   position: relative;
   width: 100%;
+  font-family: $font-normal;
 
   &>div {
     margin: auto;
@@ -103,21 +109,22 @@ section>h6 {
   width: 100%;
 
   &>div {
+    display: inline-flex;
     width: fit-content;
 
-    &>span {
-      animation: typing 2.5s steps(17, end);
+    &::before {
+      content: '>\A0';
+    }
+
+    &>span:first-child {
+      animation: typing 4.5s steps(17, end);
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
+    }
 
-      &::before {
-        content: '>\A0';
-      }
-
-      &>span {
-        animation: insert-mode 1s steps(2) infinite;
-      }
+    &>:nth-child(even) {
+      animation: insert-mode 1s steps(2) infinite;
     }
   }
 }
@@ -125,11 +132,13 @@ section>h6 {
 .hero-description {
   color: $color-blue;
   font-family: $font-normal;
-  line-height: $pixel-30;
+  padding-top: $pixel-25;
 
   &>:nth-child(even) {
     margin-bottom: $pixel-20;
     margin-top: $pixel-20;
+    padding-bottom: $pixel-25;
+    padding-top: $pixel-25;
   }
 
   a {
@@ -143,23 +152,23 @@ section>h6 {
   background-color: $color-console-header;
   border-color: $color-console-header-border;
   border-style: solid;
-  border-top-left-radius: $pixel-5;
-  border-top-right-radius: $pixel-5;
-  height: $pixel-25;
+  border-top-left-radius: $pixel-20;
+  border-top-right-radius: $pixel-20;
+  height: $pixel-50;
   position: relative;
 
   &>div {
     background-color: $color-console-icons;
     display: block;
-    height: $pixel-15;
+    height: $pixel-25;
     mask-image: url('https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
     position: absolute;
-    right: $pixel-10;
-    top: $pixel-5/2;
-    width: $pixel-15;
+    right: $pixel-20;
+    top: $pixel-25/2;
+    width: $pixel-25;
   }
 }
 
@@ -221,6 +230,14 @@ section>h6 {
   }
 }
 
+@media only screen and (max-width: $pad-width) {
+  body {
+    main {
+      padding: $pixel-25;
+    }
+  }
+}
+
 @media only screen and (min-width: $phone-width) {
   .hero-title {
     font-size: $font-s-4;
@@ -228,7 +245,6 @@ section>h6 {
 
   .hero-description {
     font-size: $font-s-3;
-    line-height: $pixel-40;
   }
 
   .console-content {
@@ -249,7 +265,6 @@ section>h6 {
 
   .hero-description {
     font-size: $font-s-3;
-    line-height: $pixel-40;
   }
 
   .col-desk-12 {
@@ -269,10 +284,27 @@ section>h6 {
 
   .hero-description {
     font-size: $font-s-2;
-    line-height: $pixel-40;
   }
 
   .col-desk-12 {
     width: $width-100/1;
+  }
+
+  .console-header {
+    border-top-left-radius: $pixel-10;
+    border-top-right-radius: $pixel-10;
+    height: $pixel-25;
+
+    &>div {
+      height: $pixel-15;
+      mask-image: url('https://rawcdn.githack.com/Dandush03/BLOB/345b39b179f56ea0b4ee90abb01d5cbbb8ec9825/Portfolio/icon_x.svg');
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      position: absolute;
+      right: $pixel-10;
+      top: $pixel-5/2;
+      width: $pixel-15;
+    }
   }
 }
