@@ -79,8 +79,8 @@ $color-white: rgba(255, 255, 255, .886);
 body {
   margin: 0;
   position: relative;
-  width: 100%;
   font-family: $font-normal;
+  width: 100%;
 
   &>div {
     margin: auto;
@@ -117,7 +117,7 @@ section>h6 {
       content: '>\A0';
     }
 
-    &>span:first-child {
+    &>:first-child {
       animation: typing 4.5s steps(17, end);
       display: inline-block;
       overflow: hidden;

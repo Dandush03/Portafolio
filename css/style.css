@@ -66,8 +66,8 @@
 body {
   margin: 0;
   position: relative;
-  width: 100%;
   font-family: "Spartan", sans-serif;
+  width: 100%;
 }
 
 body > div {
@@ -110,7 +110,7 @@ section > h6 {
   content: '>\A0';
 }
 
-.hero-title > div > span:first-child {
+.hero-title > div > :first-child {
   -webkit-animation: typing 4.5s steps(17, end);
           animation: typing 4.5s steps(17, end);
   display: inline-block;
