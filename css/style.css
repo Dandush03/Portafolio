@@ -219,8 +219,15 @@ section > h6 {
   width: fit-content;
 }
 
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .projects > .project-img > a > figure {
   margin: 0;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -321,8 +328,8 @@ section > h6 {
   width: 100%;
 }
 
-.col-3 {
-  width: 33.33333%;
+.col-2 {
+  width: 50%;
 }
 
 .resume {
@@ -357,6 +364,20 @@ section > h6 {
 }
 
 @media only screen and (min-width: 1024px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects > .project-img > a > figure {
+    max-height: 50vh;
+  }
+  .projects > .project-info > .brief > span > :first-child {
+    font-weight: bold;
+  }
+  .projects > .project-info > .category > h5 {
+    font-size: 1em;
+  }
   .hero-title {
     font-size: 5em;
   }
@@ -369,8 +390,8 @@ section > h6 {
   .col-desk-1 {
     width: 100%;
   }
-  .col-desk-3 {
-    width: 33.33333%;
+  .col-desk-2 {
+    width: 50%;
   }
 }
 

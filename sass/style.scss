@@ -19,6 +19,7 @@ $vh-25: 25vh;
 $vh-30: 30vh;
 $vh-40: 40vh;
 $vh-50: 50vh;
+$vw-100: 100vw;
 $font-s-1: 1em;
 $font-s-1-2: 1.2em;
 $font-s-1-5: 1.5em;
@@ -224,6 +225,7 @@ section>h6 {
 }
 
 .projects {
+  display: flex;
 
   &>.project-img {
 
@@ -231,9 +233,9 @@ section>h6 {
 
       &>figure {
         margin: 0;
+        width: 100%;
         position: relative;
         overflow: hidden;
-
         &>div {
           position: absolute;
           background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
@@ -333,8 +335,8 @@ section>h6 {
   width: $width-100/1;
 }
 
-.col-3 {
-  width: $width-100/3;
+.col-2 {
+  width: $width-100/2;
 }
 
 .resume {
@@ -373,6 +375,42 @@ section>h6 {
 }
 
 @media only screen and (min-width: $pad-width) {
+  
+  .projects {
+    display: flex;
+  
+    &>.project-img {
+  
+      &>a {
+  
+        &>figure {
+          max-height: $vh-50;
+        }
+      }
+    }
+  
+    &>.project-info {
+  
+      &>.brief {
+  
+        &>span {
+  
+          &>:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+  
+      &>.category {
+  
+        &>h5{
+          font-size: $font-s-1;
+        }
+  
+      }
+    }
+  }
+
   .hero-title {
     font-size: $font-s-5;
   }
@@ -389,8 +427,8 @@ section>h6 {
     width: $width-100/1;
   }
 
-  .col-desk-3 {
-    width: $width-100/3;
+  .col-desk-2 {
+    width: $width-100/2;
   }
 }
 
