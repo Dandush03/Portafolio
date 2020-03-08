@@ -219,12 +219,110 @@ section > h6 {
   width: fit-content;
 }
 
+.projects > .project-img > a > figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects > .project-img > a > figure > div {
+  position: absolute;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(transparent));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  background-position: 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: rgba(208, 255, 0, 0.886);
+}
+
+.projects > .project-img > a > figure > div > h5 {
+  font-size: 2em;
+  margin: 10px;
+}
+
+.projects > .project-img > a > figure > div:hover {
+  opacity: 0;
+}
+
+.projects > .project-img > a > figure > div:hover > h5 {
+  display: none;
+}
+
+.projects > .project-img > a > figure > img {
+  width: 100%;
+}
+
+.projects > .project-info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.projects > .project-info > .brief > span {
+  font-size: 1.2em;
+}
+
+.projects > .project-info > .brief > span > :first-child {
+  font-weight: bold;
+}
+
+.projects > .project-info > .category > h5 {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30px auto;
+  color: rgba(37, 33, 98, 0.9);
+}
+
+.title::before {
+  position: absolute;
+  right: 130%;
+  top: 35%;
+  content: "";
+  width: 50px;
+  background-color: rgba(37, 33, 98, 0.9);
+  display: block;
+  height: 3px;
+}
+
+.title::after {
+  position: absolute;
+  left: 130%;
+  top: 35%;
+  content: "";
+  width: 50px;
+  background-color: rgba(37, 33, 98, 0.9);
+  display: block;
+  height: 3px;
+}
+
 [class*='col-'] {
   float: left;
 }
 
-.col-12 {
+.col-1 {
   width: 100%;
+}
+
+.col-3 {
+  width: 33.33333%;
 }
 
 .resume {
@@ -268,8 +366,11 @@ section > h6 {
   .hero-description {
     font-size: 3em;
   }
-  .col-desk-12 {
+  .col-desk-1 {
     width: 100%;
+  }
+  .col-desk-3 {
+    width: 33.33333%;
   }
 }
 
@@ -284,7 +385,7 @@ section > h6 {
   .hero-description {
     font-size: 2em;
   }
-  .col-desk-12 {
+  .col-desk-1 {
     width: 100%;
   }
   .console-header {

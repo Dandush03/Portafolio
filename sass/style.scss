@@ -19,6 +19,9 @@ $vh-25: 25vh;
 $vh-30: 30vh;
 $vh-40: 40vh;
 $vh-50: 50vh;
+$font-s-1: 1em;
+$font-s-1-2: 1.2em;
+$font-s-1-5: 1.5em;
 $font-s-1-75: 1.75em;
 $font-s-2: 2em;
 $font-s-3: 3em;
@@ -220,12 +223,118 @@ section>h6 {
   }
 }
 
+.projects {
+
+  &>.project-img {
+
+    &>a {
+
+      &>figure {
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+
+        &>div {
+          position: absolute;
+          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+          transition: all 1s ease-out;
+          height: 100%;
+          width: 100%;
+          bottom: 0;
+          background-position: 0 0;
+          display: flex;
+          align-items: flex-end;
+          color: $color-yellow;
+
+          &>h5 {
+            font-size: $font-s-2;
+            margin: $pixel-10;
+          }
+
+          &:hover {
+            opacity: 0;
+
+            &>h5 {
+              display: none;
+            }
+          }
+        }
+
+        &>img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &>.project-info {
+    margin-top: $pixel-25;
+    margin-bottom: $pixel-25;
+    padding-left: $pixel-10;
+    padding-right: $pixel-10;
+
+    &>.brief {
+
+      &>span {
+        font-size: $font-s-1-2;
+
+        &>:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &>.category {
+
+      &>h5{
+        margin-top: $pixel-10;
+        font-size: $font-s-1;
+      }
+
+    }
+  }
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  margin: $pixel-30 auto;
+  color: $color-blue;
+
+  &::before {
+    position: absolute;
+    right: 130%;
+    top: 35%;
+    content: "";
+    width: $pixel-50;
+    background-color: $color-blue;
+    display: block;
+    height: 3px;
+  }
+
+  &::after {
+    position: absolute;
+    left: 130%;
+    top: 35%;
+    content: "";
+    width: $pixel-50;
+    background-color: $color-blue;
+    display: block;
+    height: 3px;
+  }
+}
+
 [class*='col-'] {
   float: left;
 }
 
-.col-12 {
+.col-1 {
   width: $width-100/1;
+}
+
+.col-3 {
+  width: $width-100/3;
 }
 
 .resume {
@@ -276,8 +385,12 @@ section>h6 {
     font-size: $font-s-3;
   }
 
-  .col-desk-12 {
+  .col-desk-1 {
     width: $width-100/1;
+  }
+
+  .col-desk-3 {
+    width: $width-100/3;
   }
 }
 
@@ -295,7 +408,7 @@ section>h6 {
     font-size: $font-s-2;
   }
 
-  .col-desk-12 {
+  .col-desk-1 {
     width: $width-100/1;
   }
 
