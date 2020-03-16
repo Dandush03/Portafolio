@@ -389,9 +389,16 @@ section>h6 {
 
 @media only screen and (min-width: $phone-width)
 {
+  .main-container.project{
+    &>:nth-child(odd){
+      .project-img{
+        order: 2;
+      }
+    }
+  }
+
   .projects {
     display: flex;
-
     &>.projects-img{
       &img{
         display: block;
