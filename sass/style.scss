@@ -273,13 +273,15 @@ section>h6 {
 
         &>img {
           width: 100%;
+          height: 100%;
         }
       }
     }
   }
 
   &>.project-info {
-    margin: auto;
+    margin-top: $pixel-30;
+    margin-bottom: $pixel-30;
     padding-left: $pixel-10;
     padding-right: $pixel-10;
     overflow: hidden;
@@ -455,6 +457,7 @@ section>h6 {
       height: 400px;
     }
     &>.project-info {
+      margin: auto;
       font-size: $font-s-1-2;
       &>div {
         &>.targets {

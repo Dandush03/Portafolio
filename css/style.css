@@ -278,10 +278,12 @@ section > h6 {
 
 .projects > .project-img > a > figure > img {
   width: 100%;
+  height: 100%;
 }
 
 .projects > .project-info {
-  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding-left: 10px;
   padding-right: 10px;
   overflow: hidden;
@@ -442,6 +444,7 @@ section > h6 {
     height: 400px;
   }
   .projects > .project-info {
+    margin: auto;
     font-size: 1.2em;
   }
   .projects > .project-info > div > .targets > h5 {
