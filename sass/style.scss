@@ -46,6 +46,7 @@ $color-console-header-border: rgba(199, 199, 199, .5);
 $color-console: rgba(49, 39, 77, .794);
 $color-yellow: rgba(208, 255, 0, .886);
 $color-white: rgba(255, 255, 255, .886);
+$color-article: rgb(210, 234, 255);
 
 @keyframes insert-mode {
   0% {
@@ -227,6 +228,11 @@ section>h6 {
 }
 
 .projects {
+  box-shadow: $box-shadow-1;
+  margin-top: $pixel-30;
+  margin-bottom: $pixel-30;
+  padding: $pixel-5;
+  background-color: $color-article;
   &>.project-img {
     align-self: center;
     height: 350px;
@@ -273,8 +279,7 @@ section>h6 {
   }
 
   &>.project-info {
-    margin-top: $pixel-25;
-    margin-bottom: $pixel-25;
+    margin: auto;
     padding-left: $pixel-10;
     padding-right: $pixel-10;
     overflow: hidden;
@@ -307,7 +312,6 @@ section>h6 {
 
       &>.click {
         margin-top: $pixel-15;
-        background-color: $color-background;
       }
     }
   }
@@ -392,12 +396,6 @@ section>h6 {
         padding-bottom: 100%;
       }
     }
-  
-    &>.project-info {
-      &>div {
-        position: absolute;
-      }
-    }
   }
 }
 
@@ -424,6 +422,10 @@ section>h6 {
     height: 1300px;
     padding: $pixel-50;
   }
+}
+
+#projects{
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: $pad-width) {

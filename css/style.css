@@ -220,6 +220,15 @@ section > h6 {
   width: fit-content;
 }
 
+.projects {
+  -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 25px 15px rgba(50, 50, 93, 0.1), 0 20px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 25px 15px rgba(50, 50, 93, 0.1), 0 20px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 5px;
+  background-color: #d2eaff;
+}
+
 .projects > .project-img {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -272,8 +281,7 @@ section > h6 {
 }
 
 .projects > .project-info {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: auto;
   padding-left: 10px;
   padding-right: 10px;
   overflow: hidden;
@@ -307,7 +315,6 @@ section > h6 {
 
 .projects > .project-info > div > .click {
   margin-top: 15px;
-  background-color: aliceblue;
 }
 
 .title {
@@ -389,9 +396,6 @@ section > h6 {
     display: block;
     padding-bottom: 100%;
   }
-  .projects > .project-info > div {
-    position: absolute;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -412,6 +416,10 @@ section > h6 {
     height: 1300px;
     padding: 50px;
   }
+}
+
+#projects {
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1024px) {
