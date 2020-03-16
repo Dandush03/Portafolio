@@ -65,6 +65,7 @@
 
 body {
   font-family: "Spartan", sans-serif;
+  background-color: aliceblue;
   margin: 0;
   position: relative;
   width: 100%;
@@ -219,15 +220,17 @@ section > h6 {
   width: fit-content;
 }
 
-.projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.projects > .project-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 350px;
 }
 
 .projects > .project-img > a > figure {
   margin: 0;
   width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -273,19 +276,38 @@ section > h6 {
   margin-bottom: 25px;
   padding-left: 10px;
   padding-right: 10px;
+  overflow: hidden;
+  max-height: 50%;
+  position: relative;
 }
 
-.projects > .project-info > .brief > span {
+.projects > .project-info > div > .brief > span {
   font-size: 1.2em;
 }
 
-.projects > .project-info > .brief > span > :first-child {
+.projects > .project-info > div > .brief > span > :first-child {
   font-weight: bold;
 }
 
-.projects > .project-info > .category > h5 {
-  margin-top: 10px;
+.projects > .project-info > div > .targets {
+  font-size: 1.2em;
+}
+
+.projects > .project-info > div > .targets > span {
+  display: inline-block;
+}
+
+.projects > .project-info > div > .targets > span > :nth-child(odd) {
   font-size: 1em;
+}
+
+.projects > .project-info > div > .targets > span > :nth-child(even) {
+  font-size: 1em;
+}
+
+.projects > .project-info > div > .click {
+  margin-top: 15px;
+  background-color: aliceblue;
 }
 
 .title {
@@ -343,13 +365,42 @@ section > h6 {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .console-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 25px;
+  }
+  .console-header > div {
+    height: 15px;
+    right: 10px;
+    top: 2.5px;
+    width: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects > .projects-imgimg {
+    display: block;
+    padding-bottom: 100%;
+  }
+  .projects > .project-info > div {
+    position: absolute;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   body main {
     padding: 25px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 769px) {
   .hero-title {
     font-size: 5em;
   }
@@ -364,20 +415,6 @@ section > h6 {
 }
 
 @media only screen and (min-width: 1024px) {
-  .projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .projects > .project-img > a > figure {
-    max-height: 50vh;
-  }
-  .projects > .project-info > .brief > span > :first-child {
-    font-weight: bold;
-  }
-  .projects > .project-info > .category > h5 {
-    font-size: 1em;
-  }
   .hero-title {
     font-size: 5em;
   }
@@ -392,6 +429,15 @@ section > h6 {
   }
   .col-desk-2 {
     width: 50%;
+  }
+  .projects > .project-img {
+    height: 400px;
+  }
+  .projects > .project-info {
+    font-size: 1.2em;
+  }
+  .projects > .project-info > div > .targets > h5 {
+    margin: 15px 0;
   }
 }
 

@@ -1,6 +1,6 @@
 $max-width: 1280px;
 $pad-width: 1024px;
-$phone-width: 600px;
+$phone-width: 768px;
 $width-100: 100%;
 $pixel-5: 5px;
 $pixel-15: 15px;
@@ -33,6 +33,7 @@ Courier,
 monospace;
 $font-normal: 'Spartan',
 sans-serif;
+$color-background: aliceblue;
 $color-sky-blue: rgba(103, 199, 255, .886);
 $color-light-blue: rgba(17, 0, 255, .692);
 $color-blue: rgba(37, 33, 98, .9);
@@ -86,6 +87,7 @@ $color-white: rgba(255, 255, 255, .886);
 
 body {
   font-family: $font-normal;
+  background-color: aliceblue;
   margin: 0;
   position: relative;
   width: 100%;
@@ -225,17 +227,18 @@ section>h6 {
 }
 
 .projects {
-  display: flex;
-
   &>.project-img {
+    align-self: center;
+    height: 350px;
 
     &>a {
-
       &>figure {
         margin: 0;
         width: 100%;
+        height: 100%;
         position: relative;
         overflow: hidden;
+
         &>div {
           position: absolute;
           background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
@@ -274,25 +277,38 @@ section>h6 {
     margin-bottom: $pixel-25;
     padding-left: $pixel-10;
     padding-right: $pixel-10;
+    overflow: hidden;
+    max-height: 50%;
+    position: relative;
 
-    &>.brief {
+    &>div {
+      &>.brief {
 
-      &>span {
-        font-size: $font-s-1-2;
+        &>span {
+          font-size: $font-s-1-2;
 
-        &>:first-child {
-          font-weight: bold;
+          &>:first-child {
+            font-weight: bold;
+          }
         }
       }
-    }
-
-    &>.category {
-
-      &>h5{
-        margin-top: $pixel-10;
-        font-size: $font-s-1;
+      &>.targets {
+        font-size: $font-s-1-2;
+        &>span {
+          display: inline-block;
+          &>:nth-child(odd) {
+            font-size: $font-s-1;
+          }
+          &>:nth-child(even) {
+            font-size: $font-s-1;
+          }
+        }
       }
 
+      &>.click {
+        margin-top: $pixel-15;
+        background-color: $color-background;
+      }
     }
   }
 }
@@ -350,6 +366,41 @@ section>h6 {
   }
 }
 
+@media only screen and (max-width: $phone-width) {
+  .console-header {
+    border-top-left-radius: $pixel-10;
+    border-top-right-radius: $pixel-10;
+    height: $pixel-25;
+  
+    &>div {
+      height: $pixel-15;
+      right: $pixel-10;
+      top: $pixel-5/2;
+      width: $pixel-15;
+    }
+  }
+}
+
+@media only screen and (min-width: $phone-width)
+{
+  .projects {
+    display: flex;
+
+    &>.projects-img{
+      &img{
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+  
+    &>.project-info {
+      &>div {
+        position: absolute;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: $pad-width) {
   body {
     main {
@@ -358,7 +409,8 @@ section>h6 {
   }
 }
 
-@media only screen and (min-width: $phone-width) {
+@media only screen and (min-width: $phone-width + 1) {
+
   .hero-title {
     font-size: $font-s-5;
   }
@@ -375,41 +427,6 @@ section>h6 {
 }
 
 @media only screen and (min-width: $pad-width) {
-  
-  .projects {
-    display: flex;
-  
-    &>.project-img {
-  
-      &>a {
-  
-        &>figure {
-          max-height: $vh-50;
-        }
-      }
-    }
-  
-    &>.project-info {
-  
-      &>.brief {
-  
-        &>span {
-  
-          &>:first-child {
-            font-weight: bold;
-          }
-        }
-      }
-  
-      &>.category {
-  
-        &>h5{
-          font-size: $font-s-1;
-        }
-  
-      }
-    }
-  }
 
   .hero-title {
     font-size: $font-s-5;
@@ -430,9 +447,26 @@ section>h6 {
   .col-desk-2 {
     width: $width-100/2;
   }
+
+  .projects {
+    &>.project-img {
+      height: 400px;
+    }
+    &>.project-info {
+      font-size: $font-s-1-2;
+      &>div {
+        &>.targets {
+          &>h5 {
+            margin: $pixel-15 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $pad-width + 1) {
+
   .hero-title {
     font-size: $font-s-5;
   }
@@ -462,4 +496,6 @@ section>h6 {
       width: $pixel-15;
     }
   }
+
+ 
 }
