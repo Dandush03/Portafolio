@@ -246,6 +246,7 @@ section>h6 {
         overflow: hidden;
 
         &>div {
+          z-index: 2;
           position: absolute;
           background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
           transition: all 1s ease-out;
@@ -272,8 +273,9 @@ section>h6 {
         }
 
         &>img {
-          width: 100%;
-          height: 100%;
+          z-index: 1;
+          position: absolute;
+          height: 150%;
         }
       }
     }
