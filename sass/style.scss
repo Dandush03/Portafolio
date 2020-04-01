@@ -402,7 +402,7 @@ figure {
 }
 
 @media only screen and (min-width: $phone-width) {
-  .main-container.project {
+  .project {
     :nth-child(odd) {
       .project-img {
         order: 2;
