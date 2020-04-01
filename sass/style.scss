@@ -1,6 +1,6 @@
 $max-width: 1280px;
 $pad-width: 1024px;
-$phone-width: 600px;
+$phone-width: 768px;
 $width-100: 100%;
 $pixel-5: 5px;
 $pixel-15: 15px;
@@ -19,6 +19,10 @@ $vh-25: 25vh;
 $vh-30: 30vh;
 $vh-40: 40vh;
 $vh-50: 50vh;
+$vw-100: 100vw;
+$font-s-1: 1em;
+$font-s-1-2: 1.2em;
+$font-s-1-5: 1.5em;
 $font-s-1-75: 1.75em;
 $font-s-2: 2em;
 $font-s-3: 3em;
@@ -29,18 +33,24 @@ Courier,
 monospace;
 $font-normal: 'Spartan',
 sans-serif;
+$color-background: rgb(240, 248, 255);
 $color-sky-blue: rgba(103, 199, 255, .886);
 $color-light-blue: rgba(17, 0, 255, .692);
 $color-blue: rgba(37, 33, 98, .9);
-$box-shadow-1: 0 50px 100px rgba(50, 50, 93, .05),
-0 25px 15px rgba(50, 50, 93, .1),
-0 20px 15px rgba(0, 0, 0, .1);
+$box-shadow-color-1: rgba(50, 50, 93, .05);
+$box-shadow-color-2: rgba(50, 50, 93, .1);
+$box-shadow-color-3: rgba(0, 0, 0, .1);
+$box-shadow-1: 0 50px 100px $box-shadow-color-1,
+0 25px 15px $box-shadow-color-2,
+0 20px 15px $box-shadow-color-3;
 $color-console-header: rgba(163, 163, 163, .5);
 $color-console-icons: rgb(141, 141, 141);
 $color-console-header-border: rgba(199, 199, 199, .5);
 $color-console: rgba(49, 39, 77, .794);
 $color-yellow: rgba(208, 255, 0, .886);
 $color-white: rgba(255, 255, 255, .886);
+$color-article: rgb(210, 234, 255);
+$color-background-img: rgba(0, 0, 0, .85);
 
 @keyframes insert-mode {
   0% {
@@ -81,12 +91,13 @@ $color-white: rgba(255, 255, 255, .886);
 }
 
 body {
+  background-color: $color-background;
   font-family: $font-normal;
   margin: 0;
   position: relative;
   width: 100%;
 
-  &>div {
+  >div {
     margin: auto;
     position: relative;
   }
@@ -113,7 +124,7 @@ section>h6 {
   white-space: nowrap;
   width: 100%;
 
-  &>div {
+  >div {
     display: inline-flex;
     width: fit-content;
 
@@ -121,14 +132,14 @@ section>h6 {
       content: '>\A0';
     }
 
-    &>:first-child {
+    >:first-child {
       animation: typing 4.5s steps(17, end);
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
     }
 
-    &>:nth-child(even) {
+    >:nth-child(even) {
       animation: insert-mode 1s steps(2) infinite;
     }
   }
@@ -139,7 +150,7 @@ section>h6 {
   font-family: $font-normal;
   padding-top: $pixel-25;
 
-  &>:nth-child(even) {
+  >:nth-child(even) {
     margin-bottom: $pixel-20;
     margin-top: $pixel-20;
     padding-bottom: $pixel-25;
@@ -166,7 +177,7 @@ section>h6 {
   height: $pixel-50;
   position: relative;
 
-  &>div {
+  >div {
     background-color: $color-console-icons;
     display: block;
     height: $pixel-25;
@@ -176,7 +187,7 @@ section>h6 {
     mask-size: cover;
     position: absolute;
     right: $pixel-20;
-    top: $pixel-25/2;
+    top: $pixel-25 / 2;
     width: $pixel-25;
   }
 }
@@ -192,11 +203,11 @@ section>h6 {
     text-decoration: none;
   }
 
-  &>:nth-child(even) {
+  >:nth-child(even) {
     margin-bottom: $pixel-30;
   }
 
-  &>div {
+  >div {
     margin-bottom: $pixel-10;
   }
 
@@ -220,12 +231,148 @@ section>h6 {
   }
 }
 
+.projects {
+  background-color: $color-article;
+  box-shadow: $box-shadow-1;
+  margin-bottom: $pixel-30;
+  margin-top: $pixel-30;
+  padding: $pixel-5;
+
+  >.project-img {
+    align-self: center;
+    height: 350px;
+
+    img {
+      height: 150%;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+
+  >.project-info {
+    margin-bottom: $pixel-30;
+    margin-top: $pixel-30;
+    max-height: 50%;
+    overflow: hidden;
+    padding-left: $pixel-10;
+    padding-right: $pixel-10;
+    position: relative;
+  }
+}
+
+.brief {
+  >.title {
+    margin-top: 0;
+  }
+
+  >span {
+    font-size: $font-s-1-2;
+
+    >:first-child {
+      font-weight: bold;
+    }
+  }
+}
+
+.targets {
+  font-size: $font-s-1-2;
+
+  >span {
+    display: inline-block;
+
+    >:nth-child(odd) {
+      font-size: $font-s-1;
+    }
+
+    >:nth-child(even) {
+      font-size: $font-s-1;
+    }
+  }
+
+  h5 {
+    margin: $pixel-15 0;
+  }
+}
+
+.click {
+  margin-top: $pixel-15;
+}
+
+figure {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  div {
+    align-items: flex-end;
+    background-image: linear-gradient(to top, $color-background-img, transparent);
+    background-position: 0 0;
+    bottom: 0;
+    color: $color-yellow;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: all 1s ease-out;
+    width: 100%;
+    z-index: 2;
+  }
+
+  h5 {
+    font-size: $font-s-2;
+    margin: $pixel-10;
+  }
+
+  :hover {
+    opacity: 0;
+
+    h5 {
+      display: none;
+    }
+  }
+}
+
+.title {
+  color: $color-blue;
+  margin: $pixel-30 auto;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+
+  &::before {
+    background-color: $color-blue;
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    right: 130%;
+    top: 35%;
+    width: $pixel-50;
+  }
+
+  &::after {
+    background-color: $color-blue;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 130%;
+    position: absolute;
+    top: 35%;
+    width: $pixel-50;
+  }
+}
+
 [class*='col-'] {
   float: left;
 }
 
-.col-12 {
-  width: $width-100/1;
+.col-1 {
+  width: $width-100 / 1;
+}
+
+.col-2 {
+  width: $width-100 / 2;
 }
 
 .resume {
@@ -233,9 +380,45 @@ section>h6 {
   position: relative;
   width: 100vw;
 
-  &>embed {
+  >embed {
     height: 100%;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: $phone-width) {
+  .console-header {
+    border-top-left-radius: $pixel-10;
+    border-top-right-radius: $pixel-10;
+    height: $pixel-25;
+
+    >div {
+      height: $pixel-15;
+      right: $pixel-10;
+      top: $pixel-5 / 2;
+      width: $pixel-15;
+    }
+  }
+}
+
+@media only screen and (min-width: $phone-width) {
+  .project {
+    :nth-child(odd) {
+      .project-img {
+        order: 2;
+      }
+    }
+  }
+
+  .projects {
+    display: flex;
+
+    >.projects-img {
+      img {
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
   }
 }
 
@@ -247,7 +430,8 @@ section>h6 {
   }
 }
 
-@media only screen and (min-width: $phone-width) {
+@media only screen and (min-width: $phone-width + 1) {
+
   .hero-title {
     font-size: $font-s-5;
   }
@@ -263,7 +447,12 @@ section>h6 {
   }
 }
 
+div + .title {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: $pad-width) {
+
   .hero-title {
     font-size: $font-s-5;
   }
@@ -276,12 +465,28 @@ section>h6 {
     font-size: $font-s-3;
   }
 
-  .col-desk-12 {
-    width: $width-100/1;
+  .col-desk-1 {
+    width: $width-100 / 1;
+  }
+
+  .col-desk-2 {
+    width: $width-100 / 2;
+  }
+
+  .projects {
+    >.project-img {
+      height: 400px;
+    }
+
+    >.project-info {
+      font-size: $font-s-1-2;
+      margin: auto;
+    }
   }
 }
 
 @media only screen and (min-width: $pad-width + 1) {
+
   .hero-title {
     font-size: $font-s-5;
   }
@@ -295,8 +500,8 @@ section>h6 {
     font-size: $font-s-2;
   }
 
-  .col-desk-12 {
-    width: $width-100/1;
+  .col-desk-1 {
+    width: $width-100 / 1;
   }
 
   .console-header {
@@ -304,10 +509,10 @@ section>h6 {
     border-top-right-radius: $pixel-10;
     height: $pixel-25;
 
-    &>div {
+    >div {
       height: $pixel-15;
       right: $pixel-10;
-      top: $pixel-5/2;
+      top: $pixel-5 / 2;
       width: $pixel-15;
     }
   }
