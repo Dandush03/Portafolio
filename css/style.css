@@ -64,6 +64,7 @@
 }
 
 body {
+  background-color: aliceblue;
   font-family: "Spartan", sans-serif;
   margin: 0;
   position: relative;
@@ -219,12 +220,157 @@ section > h6 {
   width: fit-content;
 }
 
+.projects {
+  background-color: #d2eaff;
+  -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 25px 15px rgba(50, 50, 93, 0.1), 0 20px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 25px 15px rgba(50, 50, 93, 0.1), 0 20px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.projects > .project-img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 350px;
+}
+
+.projects > .project-img img {
+  height: 150%;
+  position: absolute;
+  z-index: 1;
+}
+
+.projects > .project-info {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-height: 50%;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.brief > .title {
+  margin-top: 0;
+}
+
+.brief > span {
+  font-size: 1.2em;
+}
+
+.brief > span > :first-child {
+  font-weight: bold;
+}
+
+.targets {
+  font-size: 1.2em;
+}
+
+.targets > span {
+  display: inline-block;
+}
+
+.targets > span > :nth-child(odd) {
+  font-size: 1em;
+}
+
+.targets > span > :nth-child(even) {
+  font-size: 1em;
+}
+
+.targets h5 {
+  margin: 15px 0;
+}
+
+.click {
+  margin-top: 15px;
+}
+
+figure {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+figure div {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(transparent));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background-position: 0 0;
+  bottom: 0;
+  color: rgba(208, 255, 0, 0.886);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  width: 100%;
+  z-index: 2;
+}
+
+figure h5 {
+  font-size: 2em;
+  margin: 10px;
+}
+
+figure :hover {
+  opacity: 0;
+}
+
+figure :hover h5 {
+  display: none;
+}
+
+.title {
+  color: rgba(37, 33, 98, 0.9);
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.title::before {
+  background-color: rgba(37, 33, 98, 0.9);
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  right: 130%;
+  top: 35%;
+  width: 50px;
+}
+
+.title::after {
+  background-color: rgba(37, 33, 98, 0.9);
+  content: '';
+  display: block;
+  height: 3px;
+  left: 130%;
+  position: absolute;
+  top: 35%;
+  width: 50px;
+}
+
 [class*='col-'] {
   float: left;
 }
 
-.col-12 {
+.col-1 {
   width: 100%;
+}
+
+.col-2 {
+  width: 50%;
 }
 
 .resume {
@@ -238,13 +384,44 @@ section > h6 {
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .console-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 25px;
+  }
+  .console-header > div {
+    height: 15px;
+    right: 10px;
+    top: 2.5px;
+    width: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project :nth-child(odd) .project-img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects > .projects-img img {
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   body main {
     padding: 25px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 769px) {
   .hero-title {
     font-size: 5em;
   }
@@ -258,6 +435,10 @@ section > h6 {
   }
 }
 
+div + .title {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 1024px) {
   .hero-title {
     font-size: 5em;
@@ -268,8 +449,18 @@ section > h6 {
   .hero-description {
     font-size: 3em;
   }
-  .col-desk-12 {
+  .col-desk-1 {
     width: 100%;
+  }
+  .col-desk-2 {
+    width: 50%;
+  }
+  .projects > .project-img {
+    height: 400px;
+  }
+  .projects > .project-info {
+    font-size: 1.2em;
+    margin: auto;
   }
 }
 
@@ -284,7 +475,7 @@ section > h6 {
   .hero-description {
     font-size: 2em;
   }
-  .col-desk-12 {
+  .col-desk-1 {
     width: 100%;
   }
   .console-header {
