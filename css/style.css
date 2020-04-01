@@ -280,6 +280,10 @@ section > h6 {
   font-size: 1em;
 }
 
+.targets h5 {
+  margin: 15px 0;
+}
+
 .click {
   margin-top: 15px;
 }
@@ -293,23 +297,23 @@ figure {
 }
 
 figure div {
-  z-index: 2;
-  position: absolute;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(transparent));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-  height: 100%;
-  width: 100%;
-  bottom: 0;
-  background-position: 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(transparent));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background-position: 0 0;
+  bottom: 0;
   color: rgba(208, 255, 0, 0.886);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  width: 100%;
+  z-index: 2;
 }
 
 figure h5 {
@@ -326,35 +330,35 @@ figure :hover h5 {
 }
 
 .title {
+  color: rgba(37, 33, 98, 0.9);
+  margin: 30px auto;
   position: relative;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px auto;
-  color: rgba(37, 33, 98, 0.9);
 }
 
 .title::before {
+  background-color: rgba(37, 33, 98, 0.9);
+  content: '';
+  display: block;
+  height: 3px;
   position: absolute;
   right: 130%;
   top: 35%;
-  content: "";
   width: 50px;
-  background-color: rgba(37, 33, 98, 0.9);
-  display: block;
-  height: 3px;
 }
 
 .title::after {
-  position: absolute;
-  left: 130%;
-  top: 35%;
-  content: "";
-  width: 50px;
   background-color: rgba(37, 33, 98, 0.9);
+  content: '';
   display: block;
   height: 3px;
+  left: 130%;
+  position: absolute;
+  top: 35%;
+  width: 50px;
 }
 
 [class*='col-'] {
@@ -405,7 +409,7 @@ figure :hover h5 {
     display: -ms-flexbox;
     display: flex;
   }
-  .projects > .projects-imgimg {
+  .projects > .projects-img img {
     display: block;
     padding-bottom: 100%;
   }
@@ -431,7 +435,7 @@ figure :hover h5 {
   }
 }
 
-#projects {
+div + .title {
   margin-bottom: 0;
 }
 
@@ -455,11 +459,8 @@ figure :hover h5 {
     height: 400px;
   }
   .projects > .project-info {
-    margin: auto;
     font-size: 1.2em;
-  }
-  .projects > .project-info > div > .targets > h5 {
-    margin: 15px 0;
+    margin: auto;
   }
 }
 

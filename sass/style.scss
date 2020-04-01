@@ -37,8 +37,8 @@ $color-background: rgb(240, 248, 255);
 $color-sky-blue: rgba(103, 199, 255, .886);
 $color-light-blue: rgba(17, 0, 255, .692);
 $color-blue: rgba(37, 33, 98, .9);
-$box-shadow-color-1:rgba(50, 50, 93, .05);
-$box-shadow-color-2:rgba(50, 50, 93, .1);
+$box-shadow-color-1: rgba(50, 50, 93, .05);
+$box-shadow-color-2: rgba(50, 50, 93, .1);
 $box-shadow-color-3: rgba(0, 0, 0, .1);
 $box-shadow-1: 0 50px 100px $box-shadow-color-1,
 0 25px 15px $box-shadow-color-2,
@@ -50,6 +50,7 @@ $color-console: rgba(49, 39, 77, .794);
 $color-yellow: rgba(208, 255, 0, .886);
 $color-white: rgba(255, 255, 255, .886);
 $color-article: rgb(210, 234, 255);
+$color-background-img: rgba(0, 0, 0, .85);
 
 @keyframes insert-mode {
   0% {
@@ -276,16 +277,20 @@ section>h6 {
 .targets {
   font-size: $font-s-1-2;
 
-  &>span {
+  >span {
     display: inline-block;
 
-    &>:nth-child(odd) {
+    >:nth-child(odd) {
       font-size: $font-s-1;
     }
 
-    &>:nth-child(even) {
+    >:nth-child(even) {
       font-size: $font-s-1;
     }
+  }
+
+  h5 {
+    margin: $pixel-15 0;
   }
 }
 
@@ -301,17 +306,17 @@ figure {
   width: 100%;
 
   div {
-    z-index: 2;
-    position: absolute;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-    transition: all 1s ease-out;
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-    background-position: 0 0;
-    display: flex;
     align-items: flex-end;
+    background-image: linear-gradient(to top, $color-background-img, transparent);
+    background-position: 0 0;
+    bottom: 0;
     color: $color-yellow;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: all 1s ease-out;
+    width: 100%;
+    z-index: 2;
   }
 
   h5 {
@@ -329,32 +334,32 @@ figure {
 }
 
 .title {
+  color: $color-blue;
+  margin: $pixel-30 auto;
   position: relative;
   text-align: center;
   width: fit-content;
-  margin: $pixel-30 auto;
-  color: $color-blue;
 
   &::before {
+    background-color: $color-blue;
+    content: '';
+    display: block;
+    height: 3px;
     position: absolute;
     right: 130%;
     top: 35%;
-    content: "";
     width: $pixel-50;
-    background-color: $color-blue;
-    display: block;
-    height: 3px;
   }
 
   &::after {
-    position: absolute;
-    left: 130%;
-    top: 35%;
-    content: "";
-    width: $pixel-50;
     background-color: $color-blue;
+    content: '';
     display: block;
     height: 3px;
+    left: 130%;
+    position: absolute;
+    top: 35%;
+    width: $pixel-50;
   }
 }
 
@@ -363,11 +368,11 @@ figure {
 }
 
 .col-1 {
-  width: $width-100/1;
+  width: $width-100 / 1;
 }
 
 .col-2 {
-  width: $width-100/2;
+  width: $width-100 / 2;
 }
 
 .resume {
@@ -375,7 +380,7 @@ figure {
   position: relative;
   width: 100vw;
 
-  &>embed {
+  >embed {
     height: 100%;
     width: 100%;
   }
@@ -387,10 +392,10 @@ figure {
     border-top-right-radius: $pixel-10;
     height: $pixel-25;
 
-    &>div {
+    >div {
       height: $pixel-15;
       right: $pixel-10;
-      top: $pixel-5/2;
+      top: $pixel-5 / 2;
       width: $pixel-15;
     }
   }
@@ -398,7 +403,7 @@ figure {
 
 @media only screen and (min-width: $phone-width) {
   .main-container.project {
-    &>:nth-child(odd) {
+    >:nth-child(odd) {
       .project-img {
         order: 2;
       }
@@ -408,8 +413,8 @@ figure {
   .projects {
     display: flex;
 
-    &>.projects-img {
-      &img {
+    >.projects-img {
+      img {
         display: block;
         padding-bottom: 100%;
       }
@@ -442,7 +447,7 @@ figure {
   }
 }
 
-#projects {
+div + .title {
   margin-bottom: 0;
 }
 
@@ -461,29 +466,21 @@ figure {
   }
 
   .col-desk-1 {
-    width: $width-100/1;
+    width: $width-100 / 1;
   }
 
   .col-desk-2 {
-    width: $width-100/2;
+    width: $width-100 / 2;
   }
 
   .projects {
-    &>.project-img {
+    >.project-img {
       height: 400px;
     }
 
-    &>.project-info {
-      margin: auto;
+    >.project-info {
       font-size: $font-s-1-2;
-
-      &>div {
-        &>.targets {
-          &>h5 {
-            margin: $pixel-15 0;
-          }
-        }
-      }
+      margin: auto;
     }
   }
 }
@@ -504,7 +501,7 @@ figure {
   }
 
   .col-desk-1 {
-    width: $width-100/1;
+    width: $width-100 / 1;
   }
 
   .console-header {
@@ -512,10 +509,10 @@ figure {
     border-top-right-radius: $pixel-10;
     height: $pixel-25;
 
-    &>div {
+    >div {
       height: $pixel-15;
       right: $pixel-10;
-      top: $pixel-5/2;
+      top: $pixel-5 / 2;
       width: $pixel-15;
     }
   }
