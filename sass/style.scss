@@ -33,11 +33,11 @@ Courier,
 monospace;
 $font-normal: 'Spartan',
 sans-serif;
-$color-background: aliceblue;
+$color-background: rgb(240, 248, 255);
 $color-sky-blue: rgba(103, 199, 255, .886);
 $color-light-blue: rgba(17, 0, 255, .692);
 $color-blue: rgba(37, 33, 98, .9);
-$box-shadow-1: 0 50px 100px rgba(50, 50, 93, .05),
+$box-shadow-1: 0 50px 100px rgba(50, 50, 93, 0.05),
 0 25px 15px rgba(50, 50, 93, .1),
 0 20px 15px rgba(0, 0, 0, .1);
 $color-console-header: rgba(163, 163, 163, .5);
@@ -87,13 +87,13 @@ $color-article: rgb(210, 234, 255);
 }
 
 body {
+  background-color: $color-background;
   font-family: $font-normal;
-  background-color: aliceblue;
   margin: 0;
   position: relative;
   width: 100%;
 
-  &>div {
+  >div {
     margin: auto;
     position: relative;
   }
@@ -120,7 +120,7 @@ section>h6 {
   white-space: nowrap;
   width: 100%;
 
-  &>div {
+  >div {
     display: inline-flex;
     width: fit-content;
 
@@ -128,14 +128,14 @@ section>h6 {
       content: '>\A0';
     }
 
-    &>:first-child {
+    >:first-child {
       animation: typing 4.5s steps(17, end);
       display: inline-block;
       overflow: hidden;
       white-space: nowrap;
     }
 
-    &>:nth-child(even) {
+    >:nth-child(even) {
       animation: insert-mode 1s steps(2) infinite;
     }
   }
@@ -146,7 +146,7 @@ section>h6 {
   font-family: $font-normal;
   padding-top: $pixel-25;
 
-  &>:nth-child(even) {
+  >:nth-child(even) {
     margin-bottom: $pixel-20;
     margin-top: $pixel-20;
     padding-bottom: $pixel-25;
@@ -173,7 +173,7 @@ section>h6 {
   height: $pixel-50;
   position: relative;
 
-  &>div {
+  >div {
     background-color: $color-console-icons;
     display: block;
     height: $pixel-25;
@@ -183,7 +183,7 @@ section>h6 {
     mask-size: cover;
     position: absolute;
     right: $pixel-20;
-    top: $pixel-25/2;
+    top: $pixel-25 / 2;
     width: $pixel-25;
   }
 }
@@ -199,11 +199,11 @@ section>h6 {
     text-decoration: none;
   }
 
-  &>:nth-child(even) {
+  >:nth-child(even) {
     margin-bottom: $pixel-30;
   }
 
-  &>div {
+  >div {
     margin-bottom: $pixel-10;
   }
 
@@ -228,95 +228,99 @@ section>h6 {
 }
 
 .projects {
-  box-shadow: $box-shadow-1;
-  margin-top: $pixel-30;
-  margin-bottom: $pixel-30;
-  padding: $pixel-5;
   background-color: $color-article;
-  &>.project-img {
+  box-shadow: $box-shadow-1;
+  margin-bottom: $pixel-30;
+  margin-top: $pixel-30;
+  padding: $pixel-5;
+
+  >.project-img {
     align-self: center;
     height: 350px;
 
-    &>a {
-      &>figure {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-
-        &>div {
-          z-index: 2;
-          position: absolute;
-          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
-          transition: all 1s ease-out;
-          height: 100%;
-          width: 100%;
-          bottom: 0;
-          background-position: 0 0;
-          display: flex;
-          align-items: flex-end;
-          color: $color-yellow;
-
-          &>h5 {
-            font-size: $font-s-2;
-            margin: $pixel-10;
-          }
-
-          &:hover {
-            opacity: 0;
-
-            &>h5 {
-              display: none;
-            }
-          }
-        }
-
-        &>img {
-          z-index: 1;
-          position: absolute;
-          height: 150%;
-        }
-      }
+    img {
+      height: 150%;
+      position: absolute;
+      z-index: 1;
     }
   }
 
-  &>.project-info {
-    margin-top: $pixel-30;
+  >.project-info {
     margin-bottom: $pixel-30;
+    margin-top: $pixel-30;
+    max-height: 50%;
+    overflow: hidden;
     padding-left: $pixel-10;
     padding-right: $pixel-10;
-    overflow: hidden;
-    max-height: 50%;
     position: relative;
+  }
+}
 
-    &>div {
-      &>.brief {
+.brief {
+  >.title {
+    margin-top: 0;
+  }
 
-        &>span {
-          font-size: $font-s-1-2;
+  >span {
+    font-size: $font-s-1-2;
 
-          &>:first-child {
-            font-weight: bold;
-          }
-        }
-      }
-      &>.targets {
-        font-size: $font-s-1-2;
-        &>span {
-          display: inline-block;
-          &>:nth-child(odd) {
-            font-size: $font-s-1;
-          }
-          &>:nth-child(even) {
-            font-size: $font-s-1;
-          }
-        }
-      }
+    >:first-child {
+      font-weight: bold;
+    }
+  }
+}
 
-      &>.click {
-        margin-top: $pixel-15;
-      }
+.targets {
+  font-size: $font-s-1-2;
+
+  &>span {
+    display: inline-block;
+
+    &>:nth-child(odd) {
+      font-size: $font-s-1;
+    }
+
+    &>:nth-child(even) {
+      font-size: $font-s-1;
+    }
+  }
+}
+
+.click {
+  margin-top: $pixel-15;
+}
+
+figure {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  div {
+    z-index: 2;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    transition: all 1s ease-out;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-position: 0 0;
+    display: flex;
+    align-items: flex-end;
+    color: $color-yellow;
+  }
+
+  h5 {
+    font-size: $font-s-2;
+    margin: $pixel-10;
+  }
+
+  :hover {
+    opacity: 0;
+
+    h5 {
+      display: none;
     }
   }
 }
@@ -379,7 +383,7 @@ section>h6 {
     border-top-left-radius: $pixel-10;
     border-top-right-radius: $pixel-10;
     height: $pixel-25;
-  
+
     &>div {
       height: $pixel-15;
       right: $pixel-10;
@@ -389,11 +393,10 @@ section>h6 {
   }
 }
 
-@media only screen and (min-width: $phone-width)
-{
-  .main-container.project{
-    &>:nth-child(odd){
-      .project-img{
+@media only screen and (min-width: $phone-width) {
+  .main-container.project {
+    &>:nth-child(odd) {
+      .project-img {
         order: 2;
       }
     }
@@ -401,8 +404,9 @@ section>h6 {
 
   .projects {
     display: flex;
-    &>.projects-img{
-      &img{
+
+    &>.projects-img {
+      &img {
         display: block;
         padding-bottom: 100%;
       }
@@ -435,7 +439,7 @@ section>h6 {
   }
 }
 
-#projects{
+#projects {
   margin-bottom: 0;
 }
 
@@ -465,9 +469,11 @@ section>h6 {
     &>.project-img {
       height: 400px;
     }
+
     &>.project-info {
       margin: auto;
       font-size: $font-s-1-2;
+
       &>div {
         &>.targets {
           &>h5 {
@@ -510,6 +516,4 @@ section>h6 {
       width: $pixel-15;
     }
   }
-
- 
 }

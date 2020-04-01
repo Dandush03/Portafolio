@@ -64,8 +64,8 @@
 }
 
 body {
-  font-family: "Spartan", sans-serif;
   background-color: aliceblue;
+  font-family: "Spartan", sans-serif;
   margin: 0;
   position: relative;
   width: 100%;
@@ -221,12 +221,12 @@ section > h6 {
 }
 
 .projects {
+  background-color: #d2eaff;
   -webkit-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 25px 15px rgba(50, 50, 93, 0.1), 0 20px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 25px 15px rgba(50, 50, 93, 0.1), 0 20px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
   padding: 5px;
-  background-color: #d2eaff;
 }
 
 .projects > .project-img {
@@ -236,15 +236,63 @@ section > h6 {
   height: 350px;
 }
 
-.projects > .project-img > a > figure {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+.projects > .project-img img {
+  height: 150%;
+  position: absolute;
+  z-index: 1;
 }
 
-.projects > .project-img > a > figure > div {
+.projects > .project-info {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-height: 50%;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.brief > .title {
+  margin-top: 0;
+}
+
+.brief > span {
+  font-size: 1.2em;
+}
+
+.brief > span > :first-child {
+  font-weight: bold;
+}
+
+.targets {
+  font-size: 1.2em;
+}
+
+.targets > span {
+  display: inline-block;
+}
+
+.targets > span > :nth-child(odd) {
+  font-size: 1em;
+}
+
+.targets > span > :nth-child(even) {
+  font-size: 1em;
+}
+
+.click {
+  margin-top: 15px;
+}
+
+figure {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+figure div {
   z-index: 2;
   position: absolute;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(transparent));
@@ -264,61 +312,17 @@ section > h6 {
   color: rgba(208, 255, 0, 0.886);
 }
 
-.projects > .project-img > a > figure > div > h5 {
+figure h5 {
   font-size: 2em;
   margin: 10px;
 }
 
-.projects > .project-img > a > figure > div:hover {
+figure :hover {
   opacity: 0;
 }
 
-.projects > .project-img > a > figure > div:hover > h5 {
+figure :hover h5 {
   display: none;
-}
-
-.projects > .project-img > a > figure > img {
-  z-index: 1;
-  position: absolute;
-  height: 150%;
-}
-
-.projects > .project-info {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  overflow: hidden;
-  max-height: 50%;
-  position: relative;
-}
-
-.projects > .project-info > div > .brief > span {
-  font-size: 1.2em;
-}
-
-.projects > .project-info > div > .brief > span > :first-child {
-  font-weight: bold;
-}
-
-.projects > .project-info > div > .targets {
-  font-size: 1.2em;
-}
-
-.projects > .project-info > div > .targets > span {
-  display: inline-block;
-}
-
-.projects > .project-info > div > .targets > span > :nth-child(odd) {
-  font-size: 1em;
-}
-
-.projects > .project-info > div > .targets > span > :nth-child(even) {
-  font-size: 1em;
-}
-
-.projects > .project-info > div > .click {
-  margin-top: 15px;
 }
 
 .title {
