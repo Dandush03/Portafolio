@@ -1,4 +1,4 @@
-# My Personaly Portfolio
+# My Personal Portfolio
 
 > In this project, I got the chance to build a responsive website for my Portfolio.
 
@@ -7,7 +7,7 @@
 ## Built With
 
 - HTML5/CSS3
-- SASS Precompailer
+- SASS Precompiler
 - Visual Studio Code
 - Nu HTML Validator
 - Beautify
@@ -32,7 +32,7 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](./issues/).
 
@@ -42,7 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone who's code was used
 - Thanks to Microverse!
 - Thanks to Justin Chi for his Awesome Design
 
