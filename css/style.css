@@ -495,9 +495,16 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+}
+
+footer svg {
+  margin: 5px;
+  width: 40px;
 }
 
 footer .twitter path {
