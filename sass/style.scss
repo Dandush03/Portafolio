@@ -447,7 +447,7 @@ figure {
   }
 }
 
-div + .title {
+div+.title {
   margin-bottom: 0;
 }
 
@@ -514,6 +514,36 @@ div + .title {
       right: $pixel-10;
       top: $pixel-5 / 2;
       width: $pixel-15;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+
+  svg {
+    margin: 5px;
+    width: 40px;
+  }
+
+  .twitter {
+    path {
+      fill: #00acee
+    }
+  }
+
+  .linkedin {
+    path {
+      fill: #0e76a8
+    }
+  }
+
+  .github {
+    path {
+      fill: #171515
     }
   }
 }
