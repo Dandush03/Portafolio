@@ -8,13 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="SimpleLog.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0 (b51213c273, 2020-08-10)"
    id="svg8"
    version="1.1"
-   viewBox="0 0 135.46671 49.477301"
+   viewBox="0 0 146.84365 49.477301"
    height="187"
-   width="512">
+   width="555">
   <defs
      id="defs2">
     <linearGradient
@@ -92,10 +92,10 @@
   </defs>
   <sodipodi:namedview
      inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="-8"
-     inkscape:window-height="1017"
-     inkscape:window-width="1920"
+     inkscape:window-y="27"
+     inkscape:window-x="72"
+     inkscape:window-height="1016"
+     inkscape:window-width="1848"
      units="px"
      showgrid="false"
      inkscape:document-rotation="0"
@@ -133,7 +133,7 @@
        id="text10"
        xml:space="preserve"><tspan
          x="16.837891"
-         y="76.857693"><tspan
+         y="76.217577"><tspan
            style="font-size:50.8px;fill:url(#linearGradient876);fill-opacity:1">D</tspan></tspan></text>
     <text
        id="text18"

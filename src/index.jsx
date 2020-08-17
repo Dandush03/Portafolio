@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import appHeight from './javascript/documentHeight';
+import appHeight from './javascripts/documentHeight';
 
 // Components
 import './components';
-import {
-  Home, NotFound, LogIn, Tasks, Registartion,
-} from './pages';
+import { Home } from './pages';
 
 // Assets
 import './assets/stylesheets/Main.scss';
@@ -24,11 +22,7 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route path="/login" exact component={LogIn} />
-        <Route path="/registration" exact component={Registartion} />
         <Route path="/" exact component={Home} />
-        <Route path="/Tasks" exact component={Tasks} />
-        <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
   </Provider>,
