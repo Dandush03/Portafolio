@@ -1,5 +1,5 @@
 {
-  "name": "dl-final-capstone-front-end",
+  "name": "dl-react-redux-template",
   "version": "0.1.0",
   "private": false,
   "root": "build/",
@@ -7,7 +7,7 @@
     "/**": "index.html"
   },
   "repository": {
-    "url": "https://github.com/Dandush03/FinalCapstone.BackEnd",
+    "url": "https://github.com/Dandush03/React-Template",
     "type": "git"
   },
   "author": {
@@ -15,7 +15,7 @@
     "email": "info@dev-webs.net"
   },
   "bugs": {
-    "url": "https://github.com/Dandush03/FinalCapstone.BackEnd/issues"
+    "url": "https://github.com/Dandush03/React-Template/issues"
   },
   "license": "MIT",
   "readmeFilename": "README.md",
