@@ -12,7 +12,7 @@ export default function Article({
   return (
     <article className="projects col-1">
       <div className="project-img col-md-2 col-1">
-        <a href={projectLink} target="_blank" rel="noreferrer">
+        <a href={projectLink} target="_blank" rel="noopener noreferrer">
           <figure>
             <div>
               <h5>{title}</h5>
@@ -40,7 +40,9 @@ export default function Article({
             </span>
           </div>
           <div className="click">
-            <a href={ghUrl}>Click Here to See Full Description</a>
+            {ghUrl
+              ? <a href={ghUrl}>Click Here to See Full Description</a>
+              : <a href={ghUrl}>This is a Private Project</a>}
           </div>
         </div>
       </div>
@@ -57,5 +59,9 @@ Article.propTypes = {
   brief: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
   target: PropTypes.string.isRequired,
-  ghUrl: PropTypes.string.isRequired,
+  ghUrl: PropTypes.string,
+};
+
+Article.defaultProps = {
+  ghUrl: null,
 };

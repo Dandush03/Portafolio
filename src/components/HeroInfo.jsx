@@ -20,6 +20,7 @@ export default function HeroName() {
         </div>
         <div>
           Check out my
+          {' '}
           <a href="#projects">side-project</a>
           {' '}
           below.
@@ -49,7 +50,7 @@ export default function HeroName() {
                 <a
                   target="_blank"
                   href="https://www.linkedin.com/in/daniel-laloush"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   LinkedIn
                 </a>
@@ -60,7 +61,7 @@ export default function HeroName() {
                 <a
                   target="_blank"
                   href="https://github.com/Dandush03"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   GitHub
                 </a>
@@ -69,7 +70,7 @@ export default function HeroName() {
               &quot;
               <span>
                 <a
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   target="_blank"
                   href="https://twitter.com/d_laloush"
                 >

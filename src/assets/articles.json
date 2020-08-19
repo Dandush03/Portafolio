@@ -7,7 +7,7 @@
         "subTitle": "NDM Law Firm & Associates - JavaScript - React",
         "brief": "This project is a multi-languages of a buffet that allows its customers to create a new request to make an appointment. This page was written in 4 different languages through loading the necessary data through a JSON file",
         "category": "Personal Project",
-        "target": "Build in 1 week",
+        "target": "Build in 1 Hours",
         "ghUrl": "https://github.com/Dandush03/ndm",
         "date": "08/19/2020"
     },
@@ -19,7 +19,7 @@
         "subTitle": "React Capstone Project - Redux - React",
         "brief": "This project is mean to let you compare between two stocks which let you compare and help you on your decision for wich one to inveset, rigth now it uses a small group of companies (Mostly from Nasdaq) in feture release will upgrade our companies list",
         "category": "Microverse - Capstone Project",
-        "target": "Build in 72 week",
+        "target": "Build in 72 Hours",
         "ghUrl": "https://github.com/Dandush03/react-capstone",
         "date": "08/18/2020"
     },
@@ -31,7 +31,7 @@
         "subTitle": "DL-Game - JavaScript - Phaser",
         "brief": "In this project, I got the opportunity to build and deploy my own and first game, that is essentially an endless runner game",
         "category": "Microverse - Capstone Project",
-        "target": "Build in 72 week",
+        "target": "Build in 72 Hours",
         "ghUrl": "https://github.com/Dandush03/Microverse-JS-Capstone",
         "date": "08/17/2020"
     },
@@ -43,7 +43,7 @@
         "subTitle": "Cultures - Ruby on Rails",
         "brief": "In this project, I got the opportunity to build and deploy a website that behaves like twitter following the design of Gregoire Vella",
         "category": "Microverse - Capstone Project",
-        "target": "Build in 72 week",
+        "target": "Build in 72 Hours",
         "ghUrl": "https://github.com/Dandush03/Microvers-RoR-Capstone",
         "date": "08/16/2020"
     },
@@ -54,9 +54,44 @@
         "imgAlt": "RoR Web Image",
         "subTitle": "Cultures - Ruby on Rails",
         "brief": "In this project, I got the opportunity to build a Gem that would act like a linter. DRev will help you find the most common linter errors such as spacing issue and EOF space",
-        "category": "DRev - Ruby",
-        "target": "Build in 72 week",
+        "category": "Microverse - Capstone Project",
+        "target": "Build in 72 Hours",
         "ghUrl": "https://github.com/Dandush03/capstone-build-linter",
         "date": "08/15/2020"
+    },
+    {
+        "title": "Microverse Final Front-End",
+        "projectLink": "https://dl-final-webapp.herokuapp.com/",
+        "imgUrl": "mobile.png",
+        "imgAlt": "Web-App Image",
+        "subTitle": "Final Capstone Front-End",
+        "brief": "this is my final capstone in Microverse, where I got the opportunity to create an API based Application using Gregoire Vella on Behance design",
+        "category": "Microverse - Capstone Project",
+        "target": "Build in 96 Hours",
+        "ghUrl": "https://github.com/Dandush03/FinalCapstone.FrontEnd",
+        "date": "08/20/2020"
+    },
+    {
+        "title": "Microverse Final Back-End",
+        "projectLink": "https://dl-final.herokuapp.com/",
+        "imgUrl": "api.png",
+        "imgAlt": "Diagram Image",
+        "subTitle": "Final Capstone Back-End",
+        "brief": "this is my final capstone in Microverse, where I got the opportunity to create an API based Application using Gregoire Vella on Behance design",
+        "category": "Microverse - Capstone Project",
+        "target": "Build in 96 Hours",
+        "ghUrl": "https://github.com/Dandush03/FinalCapstone.BackEnd",
+        "date": "08/20/2020"
+    },
+    {
+        "title": "Embassy of Venezuela in Israel",
+        "projectLink": "https://www.embajadavenezuelaisrael.org/",
+        "imgUrl": "embassy.jpg",
+        "imgAlt": "Diagram Image",
+        "subTitle": "Embassy Web App",
+        "brief": "In this project, I got the opportunity to build the page of the embassy of Venezuela in Israel using the best practices to deliver a high quality and secure product",
+        "category": "Private Project",
+        "target": "Create a user interface where the admin user will be able to modify the page content",
+        "date": "08/21/2020"
     }
 ]
