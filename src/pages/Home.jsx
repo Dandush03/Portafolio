@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import Loading from './Loading';
-import { HeroInfo } from '../components';
+import { HeroInfo, GroupArticle, Footer } from '../components';
 
 export default function Home() {
   return (
@@ -13,10 +13,9 @@ export default function Home() {
           <HeroInfo />
         </section>
         <section className="col-1">
-          <div className="main-container project">
-            <h2 className="title" id="projects">Projects</h2>
-          </div>
+          <GroupArticle />
         </section>
+        <Footer />
       </main>
     </>
   );

@@ -317,7 +317,7 @@ figure {
     display: flex;
     height: 100%;
     position: absolute;
-    transition: all 1s ease-out;
+    transition: opacity 1s ease-out;
     width: 100%;
     z-index: 2;
   }
