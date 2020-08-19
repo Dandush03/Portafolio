@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.78740bdf.chunk.css",
+    "main.css": "/static/css/main.d2b50559.chunk.css",
     "main.js": "/static/js/main.2a2af078.chunk.js",
     "main.js.map": "/static/js/main.2a2af078.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
@@ -8,9 +8,9 @@
     "static/js/2.176b348b.chunk.js": "/static/js/2.176b348b.chunk.js",
     "static/js/2.176b348b.chunk.js.map": "/static/js/2.176b348b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.06c168b0942aec86fbeb23e874096796.js": "/precache-manifest.06c168b0942aec86fbeb23e874096796.js",
+    "precache-manifest.d542b09dfe50249d9d7820daffcf8929.js": "/precache-manifest.d542b09dfe50249d9d7820daffcf8929.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.78740bdf.chunk.css.map": "/static/css/main.78740bdf.chunk.css.map",
+    "static/css/main.d2b50559.chunk.css.map": "/static/css/main.d2b50559.chunk.css.map",
     "static/js/2.176b348b.chunk.js.LICENSE.txt": "/static/js/2.176b348b.chunk.js.LICENSE.txt",
     "static/media/Daniel Laloush Resumen.pdf": "/static/media/Daniel Laloush Resumen.fbfa55e2.pdf",
     "static/media/Program.gif": "/static/media/Program.3d78bd82.gif",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.176b348b.chunk.js",
-    "static/css/main.78740bdf.chunk.css",
+    "static/css/main.d2b50559.chunk.css",
     "static/js/main.2a2af078.chunk.js"
   ]
 }
