@@ -1,0 +1,62 @@
+[
+    {
+        "title": "NDM Law Firm & Associates",
+        "projectLink": "https://www.ndm.com.pa/",
+        "imgUrl": "ndm.png",
+        "imgAlt": "NDM Web Image",
+        "subTitle": "NDM Law Firm & Associates - JavaScript - React",
+        "brief": "This project is a multi-languages of a buffet that allows its customers to create a new request to make an appointment. This page was written in 4 different languages through loading the necessary data through a JSON file",
+        "category": "Personal Project",
+        "target": "Build in 1 week",
+        "ghUrl": "https://github.com/Dandush03/ndm",
+        "date": "08/19/2020"
+    },
+    {
+        "title": "React Capstone Project",
+        "projectLink": "https://dl-stocks.herokuapp.com/",
+        "imgUrl": "stock.png",
+        "imgAlt": "Tock App Picture",
+        "subTitle": "React Capstone Project - Redux - React",
+        "brief": "This project is mean to let you compare between two stocks which let you compare and help you on your decision for wich one to inveset, rigth now it uses a small group of companies (Mostly from Nasdaq) in feture release will upgrade our companies list",
+        "category": "Microverse - Capstone Project",
+        "target": "Build in 72 week",
+        "ghUrl": "https://github.com/Dandush03/react-capstone",
+        "date": "08/18/2020"
+    },
+    {
+        "title": "JS Capstone Project",
+        "projectLink": "https://dl-game.herokuapp.com/",
+        "imgUrl": "game-play.gif",
+        "imgAlt": "Game Web Image",
+        "subTitle": "DL-Game - JavaScript - Phaser",
+        "brief": "In this project, I got the opportunity to build and deploy my own and first game, that is essentially an endless runner game",
+        "category": "Microverse - Capstone Project",
+        "target": "Build in 72 week",
+        "ghUrl": "https://github.com/Dandush03/Microverse-JS-Capstone",
+        "date": "08/17/2020"
+    },
+    {
+        "title": "RoR Capstone Project",
+        "projectLink": "https://dl-culture.herokuapp.com/",
+        "imgUrl": "RoR.png",
+        "imgAlt": "RoR Web Image",
+        "subTitle": "Cultures - Ruby on Rails",
+        "brief": "In this project, I got the opportunity to build and deploy a website that behaves like twitter following the design of Gregoire Vella",
+        "category": "Microverse - Capstone Project",
+        "target": "Build in 72 week",
+        "ghUrl": "https://github.com/Dandush03/Microvers-RoR-Capstone",
+        "date": "08/16/2020"
+    },
+    {
+        "title": "Ruby Capstone Project",
+        "projectLink": "https://dl-culture.herokuapp.com/",
+        "imgUrl": "Program.gif",
+        "imgAlt": "RoR Web Image",
+        "subTitle": "Cultures - Ruby on Rails",
+        "brief": "In this project, I got the opportunity to build a Gem that would act like a linter. DRev will help you find the most common linter errors such as spacing issue and EOF space",
+        "category": "DRev - Ruby",
+        "target": "Build in 72 week",
+        "ghUrl": "https://github.com/Dandush03/capstone-build-linter",
+        "date": "08/15/2020"
+    }
+]

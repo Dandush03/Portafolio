@@ -1,0 +1,20 @@
+@import './Home';
+@import './Loading';
+
+:root {
+  --app-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  margin: 0;
+  max-width: 100vw;
+}
+
+main {
+  height: var(--app-height);
+}

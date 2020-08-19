@@ -51,6 +51,9 @@ $color-yellow: rgba(208, 255, 0, .886);
 $color-white: rgba(255, 255, 255, .886);
 $color-article: rgb(210, 234, 255);
 $color-background-img: rgba(0, 0, 0, .85);
+$linked-in: #0e76a8;
+$github: #171515;
+$twitter: #00acee;
 
 @keyframes insert-mode {
   0% {
@@ -181,7 +184,7 @@ section>h6 {
     background-color: $color-console-icons;
     display: block;
     height: $pixel-25;
-    mask-image: url('../resources/img/icon_x.svg');
+    mask-image: url('../images/icon_x.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: cover;
@@ -314,7 +317,7 @@ figure {
     display: flex;
     height: 100%;
     position: absolute;
-    transition: all 1s ease-out;
+    transition: opacity 1s ease-out;
     width: 100%;
     z-index: 2;
   }
@@ -531,19 +534,19 @@ footer {
 
   .twitter {
     path {
-      fill: #00acee
+      fill: $twitter;
     }
   }
 
   .linkedin {
     path {
-      fill: #0e76a8
+      fill: $linked-in;
     }
   }
 
   .github {
     path {
-      fill: #171515
+      fill: $github;
     }
   }
 }
