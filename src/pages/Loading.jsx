@@ -40,7 +40,7 @@ export default () => {
 
   useInterval(() => {
     startTimer();
-  }, 3000);
+  }, 1000);
 
   if (items === 0 && !loaded) {
     setloaded(true);
