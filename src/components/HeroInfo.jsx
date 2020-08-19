@@ -1,5 +1,7 @@
 import React from 'react';
 
+import doc from '../assets/docs/Daniel Laloush Resumen.pdf'
+
 export default function HeroName() {
   return (
     <div className="main-container">
@@ -82,8 +84,8 @@ export default function HeroName() {
             <span className="console-output">
               &quot;
               <a
-                target="_blank"
-                href="resources/docs/Daniel Laloush Resumen.pdf"
+                href={doc}
+                download
               >
                 daniel_laloush.pdf
               </a>
