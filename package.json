@@ -8,7 +8,7 @@
   },
   "homepage": "https://dlaloush.me/",
   "repository": {
-    "url": "https://github.com/Dandush03/React-Template",
+    "url": "https://github.com/Dandush03/Portafolio",
     "type": "git"
   },
   "author": {
@@ -16,7 +16,7 @@
     "email": "info@dev-webs.net"
   },
   "bugs": {
-    "url": "https://github.com/Dandush03/React-Template/issues"
+    "url": "https://github.com/Dandush03/Portafolio/issues"
   },
   "license": "MIT",
   "readmeFilename": "README.md",
