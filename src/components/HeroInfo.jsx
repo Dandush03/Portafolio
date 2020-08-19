@@ -1,6 +1,6 @@
 import React from 'react';
 
-import doc from '../assets/docs/Daniel Laloush Resumen.pdf'
+import doc from '../assets/docs/Daniel Laloush Resumen.pdf';
 
 export default function HeroName() {
   return (

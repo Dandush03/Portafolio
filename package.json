@@ -6,7 +6,7 @@
   "routes": {
     "/**": "index.html"
   },
-  "homepage": "https://dlaloush.me/",
+  "homepage": "https://dandush03.github.io/Portafolio/",
   "repository": {
     "url": "https://github.com/Dandush03/React-Template",
     "type": "git"
