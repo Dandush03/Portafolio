@@ -1,14 +1,12 @@
 {
   "files": {
     "main.css": "/Portafolio/static/css/main.e21ac167.chunk.css",
-    "main.js": "/Portafolio/static/js/main.8e2dc1d5.chunk.js",
-    "main.js.map": "/Portafolio/static/js/main.8e2dc1d5.chunk.js.map",
-    "runtime-main.js": "/Portafolio/static/js/runtime-main.16876479.js",
-    "runtime-main.js.map": "/Portafolio/static/js/runtime-main.16876479.js.map",
+    "main.js": "/Portafolio/static/js/main.cfc0da53.chunk.js",
+    "main.js.map": "/Portafolio/static/js/main.cfc0da53.chunk.js.map",
+    "runtime-main.js": "/Portafolio/static/js/runtime-main.380ad53b.js",
+    "runtime-main.js.map": "/Portafolio/static/js/runtime-main.380ad53b.js.map",
     "static/js/2.6aa09a5e.chunk.js": "/Portafolio/static/js/2.6aa09a5e.chunk.js",
     "static/js/2.6aa09a5e.chunk.js.map": "/Portafolio/static/js/2.6aa09a5e.chunk.js.map",
-    "static/js/3.11c0475b.chunk.js": "/Portafolio/static/js/3.11c0475b.chunk.js",
-    "static/js/3.11c0475b.chunk.js.map": "/Portafolio/static/js/3.11c0475b.chunk.js.map",
     "index.html": "/Portafolio/index.html",
     "static/css/main.e21ac167.chunk.css.map": "/Portafolio/static/css/main.e21ac167.chunk.css.map",
     "static/js/2.6aa09a5e.chunk.js.LICENSE.txt": "/Portafolio/static/js/2.6aa09a5e.chunk.js.LICENSE.txt",
@@ -27,9 +25,9 @@
     "static/media/twitter-square-brands.svg": "/Portafolio/static/media/twitter-square-brands.763ddc74.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.16876479.js",
+    "static/js/runtime-main.380ad53b.js",
     "static/js/2.6aa09a5e.chunk.js",
     "static/css/main.e21ac167.chunk.css",
-    "static/js/main.8e2dc1d5.chunk.js"
+    "static/js/main.cfc0da53.chunk.js"
   ]
 }
