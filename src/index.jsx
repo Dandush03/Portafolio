@@ -22,7 +22,7 @@ ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/Portafolio" exact component={Home} />
       </Switch>
     </BrowserRouter>
   </Provider>,
