@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Link](http://dlaloush.me/)
+[Live Link](https://dandush03.github.io/Portafolio/)
 
 ## Getting Started
 
@@ -28,7 +28,7 @@
 - Linkedin: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
 - Github: [@Dandush03](https://github.com/Dandush03)
 - Twitter: [@d_laloush](https://twitter.com/d_laloush)
-- [Portfolio](https://dlaloush.me/)
+- [Portfolio](https://dandush03.github.io/Portafolio/)
 
 ## 🤝 Contributing
 
